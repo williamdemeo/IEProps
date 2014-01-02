@@ -1,1 +1,0 @@
-../CommAlg/commalg.cls
