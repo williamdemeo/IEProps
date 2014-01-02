@@ -14,5 +14,6 @@ Thanks for your interest in this work!
 
 [@williamdemeo](https://github.com/williamdemeo)
 
+[Interval enforceable properties of finite groups]: https://github.com/williamdemeo/IEProps/raw/master/DeMeo-IEProps-2013.pdf
 [DeMeo-IEProps-2013.pdf]: https://github.com/williamdemeo/IEProps/raw/master/DeMeo-IEProps-2013.pdf
 [submit an issue]: https://github.com/williamdemeo/Overalgebras/issues
