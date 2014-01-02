@@ -1,7 +1,7 @@
 IEProps
 =======
 
-This repository contains my article
+This repository contains a draft of my article
 
 [Interval enforceable properties of finite groups][], *Comm. Alg.* (to appear).
 
