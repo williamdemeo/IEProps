@@ -1,7 +1,3 @@
-%\documentclass[draft,11pt,leqno]{commalg}
-%\documentclass[11pt]{amsart}
-%\documentclass[reqno,onecolumn,oneside]{paper}
-%\documentclass[reqno,onecolumn,oneside]{gen-j-l}
 \documentclass{gen-j-l}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{amscd,amssymb}  % amsthm, amsmath are included by default
@@ -10,25 +6,6 @@
 \usepackage{color}
 \usetikzlibrary{calc}
 \usepackage[colorlinks=true,urlcolor=black,linkcolor=black,citecolor=black]{hyperref}
-
-
-
-% \documentclass[11pt]{amsart}
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% %%%%%%%%%%%%% PACKAGES %%%%%%%%%%%%%%%%%
-% \usepackage[colorlinks=true,urlcolor=black,linkcolor=black,citecolor=black]{hyperref}
-% \usepackage{latexsym}
-% \usepackage{amscd,amsmath,amssymb,amsthm}
-% \usepackage{stmaryrd}
-% \usepackage{mathrsfs}
-% \usepackage{enumerate}
-% \usepackage{color}
-% \usepackage{scalefnt}
-% \usepackage{xspace}
-% \usepackage{tikz}
-% \usetikzlibrary{calc}
-%\usepackage[printonlyused,smaller]{acronym}
 \usepackage{acronym}
 
 %%%%%%%%%%%%% MY MACROS %%%%%%%%%%%%%%%%%
@@ -189,34 +166,10 @@
 \address{Department of Mathematics, University of South Carolina, Columbia, SC 29208, United States}
 
 \email{williamdemeo@gmail.com}
-
-
-\maketitle
-
-\today
-
-\newacro{FLRP}{Finite Lattice Representation Problem}
-\newacro{IE}{Interval Enforceable}
-\newacro{cfIE}[cf-IE]{Core-free Interval Enforceable}
-\newacro{minIE}[min-IE]{Minimal Interval Enforceable}
-\newacro{CFSG}{Classification of Finite Simple Groups}
-
-
-\begin{abstract}
-
-We propose a classification of group properties according to whether they can be
-imposed on a group by assuming its subgroup lattice contains an interval
-isomorphic to a given lattice.  Suppose $\cP$ is a group property and there exists a
-lattice $L$ such that if $G$ is a group with $L$ isomorphic to an interval 
-$\lb H,G \rb$ in $\Sub(G)$, with $H$ core-free, then $G$ has property $\cP$.  We
-call such $\cP$ \ac{cfIE}. Among other things we show that if both a property
-and its negation could be proved \acs{cfIE}, this would solve an important problem in
-universal algebra. 
-
-\end{abstract}
+\urladdr{http://williamdemeo.org}
 
 %\end{frontmatter}
-\subjclass[2010]{Primary 20E15; Secondary 20D30, 20B10, 06B15, 08A30}
+\subjclass[2010]{Primary 20D30; Secondary 06B15, 08A30}
 % \noindent
 % {\it 2010 Mathematics Subject Classification:}
 % % \MSC[2010] 
@@ -229,10 +182,30 @@ universal algebra.
 
 \keywords{subgroup lattice; congruence lattice; group properties}
 
-\vskip 10pt
+\thanks{The author wishes to thank the anonymous referee for many
+excellent suggestions that greatly improved the presentation of the paper.}
 
-\noindent The author wishes to thank the anonymous referee for many
-excellent suggestions that greatly improved the presentation of the paper.
+\begin{abstract}
+
+We propose a classification of group properties according to whether they can be
+imposed on a group by assuming its subgroup lattice contains an interval
+isomorphic to a given lattice.  Suppose $\cP$ is a group property and there exists a
+lattice $L$ such that if $G$ is a group with $L$ isomorphic to an interval 
+$\lb H,G \rb$ in $\Sub(G)$, with $H$ core-free, then $G$ has property $\cP$.  We
+call such $\cP$ \emph{Core-free Interval Enforceable (cf-IE)}. Among other
+things we show that if both a property and its negation could be proved
+cf-IE, this would solve an important problem in universal algebra. 
+
+\end{abstract}
+
+
+\maketitle
+
+\newacro{FLRP}{Finite Lattice Representation Problem}
+\newacro{IE}{Interval Enforceable}
+\newacro{cfIE}[cf-IE]{Core-free Interval Enforceable}
+\newacro{minIE}[min-IE]{Minimal Interval Enforceable}
+\newacro{CFSG}{Classification of Finite Simple Groups}
 
 
 %%%%%%%%%%%%%%%%%% main text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -256,7 +229,7 @@ $G$. For some groups, $\Sub(G)$ determines $G$ up to isomorphism.
 For example, this is true of the Klein-4 group, the alternating groups
 $A_n\, (n\geq 4)$, and every finite nonabelian simple group.\footnote{For a
   proof that every finite nonabelian simple group is determined by its subgroup
-  lattice, see Theorem 7.8.1 of~\cite{Schmidt:1994}.  The proof relies on the
+  lattice, see~\cite[Theorem 7.8.1]{Schmidt:1994}.  The proof relies on the
  \acs{CFSG} Theorem.} 
 For other groups,
 $\Sub(G)$ is isomorphic to the subgroup lattices of all groups in an infinite class
@@ -1815,8 +1788,8 @@ Consequently, $G$ is characterized by the Aschbacher-O'Nan-Scott Theorem as
 being either almost simple, of product action type, or of diagonal type (see \cite[Theorem 4.6A]{Dixon:1996}).
 
  \bibliography{wjd}
- \bibliographystyle{spmpsci}
-% \bibliographystyle{plainurl}
+% \bibliographystyle{spmpsci}
+\bibliographystyle{amsplain}
 
 
 \end{document}
