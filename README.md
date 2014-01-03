@@ -6,7 +6,7 @@ This repository contains a draft of my article
 [Interval enforceable properties of finite groups][], *Comm. Alg.* (to appear).
 
 The paper is under final review and I expect it to be published sometime in 2014.  
-A preprint is available in the file [DeMeo-IEProps.pdf][].
+A preprint is available in the file [DeMeo-IEProps-rev1.pdf][].
 
 For questions, comments, or suggestions please [submit an issue][].
 
