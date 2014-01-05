@@ -159,7 +159,9 @@
 
 \begin{document}
 
-\title{Interval enforceable properties of finite groups}
+\title{Group properties implied by
+local subgroup lattice structure} 
+%Interval enforceable properties of finite groups}
 
 \author{William DeMeo}
 
@@ -188,13 +190,14 @@ excellent suggestions that greatly improved the presentation of the paper.}
 \begin{abstract}
 
 We propose a classification of group properties according to whether they can be
-imposed on a group by assuming its subgroup lattice contains an interval
-isomorphic to a given lattice.  Suppose $\cP$ is a group property and there exists a
-lattice $L$ such that if $G$ is a group with $L$ isomorphic to an interval 
+deduced from the assumption that a group's subgroup lattice contains an interval
+isomorphic to some lattice.  Suppose $\cP$ is a group property and suppose there
+exists a lattice $L$ such that if $G$ is a group with $L$ isomorphic to an interval 
 $\lb H,G \rb$ in $\Sub(G)$, with $H$ core-free, then $G$ has property $\cP$.  We
-call such $\cP$ \emph{Core-free Interval Enforceable (cf-IE)}. Among other
+call such $\cP$ \emph{core-free interval enforceable}. Among other
 things we show that if both a property and its negation could be proved
-cf-IE, this would solve an important problem in universal algebra. 
+core-free interval enforceable, this would solve an important problem in
+universal algebra.
 
 \end{abstract}
 
@@ -225,38 +228,14 @@ and many others (see Schmidt~\cite{Schmidt:1994}).
 Much of this work focuses on the problem of inferring
 properties of a group $G$ based on the structure of its lattice of subgroups,
 $\Sub(G)$,  or, conversely,  inferring lattice theoretical properties of $\Sub(G)$ from properties of
-$G$. For some groups, $\Sub(G)$ determines $G$ up to isomorphism.
-For example, this is true of the Klein-4 group, the alternating groups
-$A_n\, (n\geq 4)$, and every finite nonabelian simple group.\footnote{For a
-  proof that every finite nonabelian simple group is determined by its subgroup
-  lattice, see~\cite[Theorem 7.8.1]{Schmidt:1994}.  The proof relies on the
- \acs{CFSG} Theorem.} 
-For other groups,
-$\Sub(G)$ is isomorphic to the subgroup lattices of all groups in an infinite class
-of nonisomorphic groups. 
-Some examples are the following: $\Sub(G)\cong \2$ if and only if $G$ is cyclic of prime order;
-$\Sub(G)\cong \3$ if and only if $G$ is cyclic of order
-$p^2$ for some prime $p$; $\Sub(G)\cong \2\times \2$ if and only if $G$ is
-cyclic of order $pq$ for some primes $p\neq q$.  At the other extreme, there are
-finite lattices which are not subgroup lattices. %$L$ for which there is no
-                                %group $G$ with $\Sub(G) \cong L$. 
-
-In addition to results which infer properties of $G$ from knowledge of the
-whole subgroup lattice $\Sub(G)$, there are results which use only lattice
-theoretical properties of $\Sub(G)$ to obtain group theoretical properties of $G$.
-For example, {\O}ystein Ore~\cite{Ore:1937,Ore:1938} 
-proved that $G$ is locally cyclic if and only if $\Sub(G)$ is
-distributive.  Michio Suzuki~\cite{Suzuki:1951} proved similar lattice theoretical
-characterizations for soluble and perfect groups. More recently, 
-John Shareshian and Russ Woodroofe~\cite{Shareshian:2012} prove that by comparing the lengths of certain maximal
-chains in $\Sub(G)$ one can determine whether or not $G$ is soluble.
+$G$. 
 
 Historically, less attention was paid to the local structure of the
 subgroup lattice of a finite group, perhaps because it seemed that very little
 about $G$ could be inferred from knowledge of, say, an upper
   interval $\lb H,G \rb := \{K \mid H\leq K \leq G\}$ in the subgroup lattice of $G$.
 Recently, however, this topic has attracted more attention (e.g.,
-\cite{Aschbacher:2009,Basile:2001,Borner:1999,Kohler:1983,Lucchini:1994a,Palfy:1988}),
+\cite{Aschbacher:2009,Lucchini:1997,Basile:2001,Borner:1999,Kohler:1983,Lucchini:1994a,Palfy:1988,Palfy:1995}),
 mostly owing to its connection to the most important open problem in
 universal algebra,
 %% Basile~\cite{Basile:2001}, as well as Aschbacher and
@@ -277,35 +256,28 @@ The following statements are equivalent:
   an interval in the subgroup lattice of a finite group.
 \end{enumerate}
 \end{theorem}
-Let $\sL_0$ be the class of all finite lattices.  For historical reasons, we
-take $\sL_3$ to be the class of those finite lattices that are isomorphic
-to congruence lattices of finite algebras, and we let $\sL_4$ be the class of
-lattices that are isomorphic to intervals in subgroup lattices of finite groups.
-It is not hard to see that $\sL_0 \supseteq \sL_3 \supseteq \sL_4$.  The theorem
-above states: if $\sL_0 = \sL_3$ then 
-$\sL_0= \sL_4$ (and conversely, of course).  Note that the theorem does not say $\sL_3 = \sL_4$.
-It is possible that $\sL_0 \supsetneq \sL_3 \supsetneq \sL_4$.
+If these statements turn out to be true, we will say ``the \acs{FLRP} has
+a positive answer.'' Otherwise, we say ``the \acs{FLRP} has a negative answer.''
+Thus, if we can find a finite lattice $L$ for which it can be proved that there
+is no finite group $G$ with $L \cong \lb H,G \rb$ for some $H< G$, then the
+\acs{FLRP} has a negative answer.  
 
-If the equivalent statements of the theorem above turn out to be true, and
-$\sL_0=\sL_3=\sL_4$, we will say ``the \acs{FLRP} has a positive answer.''
-Otherwise, we say ``the \acs{FLRP} has a negative answer.'' Thus, if we can find a finite lattice $L$ for which it can be
-proved that there is no finite group $G$ with $L \cong \lb H,G \rb$ for some $H< G$,
-then it will follow from Theorem~\ref{thm:P5} that the \acs{FLRP} has a negative answer.
-
-In this paper we propose a new classification of group properties according to whether
-or not they can be imposed on a group $G$ by assuming that $\Sub(G)$ has an
-upper interval isomorphic to some  finite
-lattice.  We believe this is a worthwhile endeavor on its own, but 
-we also show how such classifications of group properties could be used to find a
-solution of the \acs{FLRP}.
+In this paper we propose a new classification of group properties according to
+whether or not they can be deduced from the assumption that $\Sub(G)$ has an upper
+interval isomorphic to some finite lattice.  We believe that discovering which 
+group properties can (cannot) be connected to local subgroup lattice
+structure in this way is worthwhile on its own, but we also show
+how such a classification could be used to find a solution to the \acs{FLRP}. 
 
 Suppose $\cP$ is a \emph{group theoretical property} 
 (defined in Section~\ref{sec:notation-definitions}) 
 and suppose there exists a finite lattice $L$ such that if $G$ is a finite group
 with $L \cong \lb H,G \rb$ for some $H\leq G$, then $G$ has property $\cP$.  We call
 such a  $\cP$ an \emph{interval enforceable} (\IE) property.  
-An \defn{interval enforceable class of groups} is a class of groups having
-property $\cP$, for some \IE\ property $\cP$. 
+% Given an \IE\ property $\cP$, the assiciated \defn{interval enforceable class of
+%   groups} is the class of all groups having property $\cP$, 
+An \defn{interval enforceable class of groups} is a class of all groups having
+property $\cP$, for some interval enforceable property $\cP$.
 
 Merely requiring that $L$ be isomorphic to an upper interval in $\Sub(G)$ seems quite
 weak, and it is difficult to find many properties that can be enforced by this
@@ -328,34 +300,6 @@ For every finite lattice $L$, for every finite collection $\sG_1, \dots, \sG_n$
 of \acs{cfIE} classes of groups,
 there exists a finite group $G \in \bigcap\limits_{i=1}^n \sG_i$ such that $L \cong
 \lb H,G \rb$ for some subgroup $H$ that is core-free in $G$. %for some subgroup $H$ that is core-free in $G$.
-  %% Let $\sL$ be any finite collection of finite lattices.
-  %% If the \acs{FLRP} has a positive answer, then there exists a finite group $G$ such
-  %% that each lattice $L_i \in \sL$ is an upper interval $L_i\cong \lb H_i, G \rb \leq
-  %% \Sub(G)$, with $H_i$ core-free in $G$. 
-
-%% By the ``parachute'' construction described in the next section,
-%% we will see that the only non-trivial part of this proposition is the conclusion
-%% that all the $H_i$ be core-free in $G$.  However, this will follow easily from
-%% Lemma~\ref{lemma-wjd-3} below.  
-
-%% What properties can be imposed on a group $G$ if we assume 
-%% that $\Sub(G)$ has an upper interval isomorphic to some lattice.
-%% Given a finite lattice $L$,
-%% what can be said about a finite group $G$ for which $L\cong \lb H,G \rb$ for some
-%% $H\leq G$?  
-
-%% \begin{lemma}
-%% \label{lemma-wjd-1}
-%% Let $\sG_1, \dots, \sG_n$ be classes of groups and  
-%% suppose that for each $i\in \{1, \dots, n\}$ there exists a finite lattice $L_i$ 
-%% such that $L_i \cong \lb H, G \rb$ only if $G\in \sG_i$.
-%% Then (B) is equivalent to
-%% \begin{enumerate}[(C)]
-%% \item For every finite collection $\sL$ of finite lattices, there exists a
-%%   finite group $G \in \bigcap\limits_{i=1}^n \sG_i$ such that, 
-%%   for all $L\in \sL$, $L \cong \lb H,G \rb$ for some $H\leq G$.
-%% \end{enumerate}
-%% \end{lemma}
 \item[(D)]
 For every finite collection $\sL$ of finite lattices, there exists a finite
 group $G$ such that for each $L_i \in \sL$ we have 
@@ -374,29 +318,6 @@ each $L_i \in \sL$ we have $L_i\cong \lb H_i, G \rb$ for some subgroup
 $H_i$ that is core-free in $G$. % for some core-free $H_i\leq G$. 
 \end{enumerate}
 }
-% Below we will prove core-free analogues of statements (C)
-% and (D).
-%%  Strenghthening further, we could consider properties of a group $G$ of minimal order
-%% with respect to satsifying $L\cong\lb H,G \rb$ for some $H\leq G$.  Such properties
-%% can be useful in certain situation, but we will not consider them in this paper.
-
-%% It is easier to prove that a property $\cP$ 
-%% is what we call \emph{core-free interval enforceable} (cf-\IE), by which we mean 
-%% there exists a finite lattice $L$ such that if $G$ is a finite group
-%% with $L \cong \lb H,G \rb$ with $H$ core-free in $G$, then $G$ has property $\cP$.
-%% Such \acs{cfIE} properties yield \acs{cfIE} classes of groups, and these are the
-%% subject of our first result.
-
-%% Section~\ref{sec:isle-prop-groups} we introduce a new formalism for
-%% \emph{interval enforceable} properties of groups. 
-
-%% \cite{Palfy:1980} prove that the
-%% \acs{FLRP} has a positive answer if and only if every finite lattice occurs as an
-%% interval in the subgroup lattice of a finite group.
-%% Given a lattice $L$, 
-%% the expression $L \cong \lb H, G \rb$ means ``there exist groups $H \leq G$ such that  
-%% $L$ is isomorphic to the interval $\{K \mid H\leq K \leq G\}$ in
-%% the subgroup lattice of $G$.''  
 
 Core-free interval enforceable properties are intimately related to permutation
 representations of groups.   
@@ -418,55 +339,47 @@ might take $\sL$ to be \emph{all} finite lattices with
 at most $N$ elements for some large $N< \omega$ -- we can always find a \emph{single}
 finite group $G$ such that every lattice in $\sL$ is a core-free upper interval in
 $\Sub(G)$.
-As a result, the single finite group $G$ must have so many faithful
+As a result, this group $G$ must have so many faithful
 representations  $G\hookrightarrow \Sym(G/H_i)$ with systems of imprimitivity
 isomorphic to $L_i$,
-%% ,\footnote{The so called \emph{systems of
-%%     imprimitivity} (of group theory) are the so called congruences (of universal
-%%   algebra) of the $G$-set $\<G/H_i, G\>$, the algebra comprised of the right (or
-%%   left) cosets $G/H_i$ acted upon by right (or left) multiplication by elements
-%%   of $G$.  The systems of imprimitivity form a lattice, which we call
-%%   $\Con\<G/H_i, G\>$, that is isomorphic to the interval
-%%   $\lb H_i, G \rb$ \citep[e.g.,][Ch.~4]{alvi:1987}.}
 one such
 representation for each distinct $L_i\in \sL$.  Moreover, the group $G$ having
 this property can be chosen from the class $\bigcap\limits_{i=1}^n \sG_i$, where 
 $\sG_1, \dots, \sG_n$ is an arbitrary collection of \acs{cfIE} classes of groups.
 
-The main contribution of this work is the proposal of a new classification
-of group properties according to whether or not they can be enforced by the
-structure of a subgroup lattice interval.  We classify a number of group
-properties in this way and prove, for example, that while insolubility is interval
-enforceable, solubility is not even core-free interval enforceable.  Another
-contribution is Lemma~\ref{lemma-wjd-4}, which generalizes a well known result
-as follows:
-If $U$ and $H$ are permuting subgroups of a group -- that is $UH = HU$ -- then
-%the set $\lb U\cap H, U \rb^H :=\lb U\cap H, U \rb \cap \{X\leq U \mid XH = HX\}$ 
-the set $\lb U\cap H, U \rb^H :=\{U\cap H \leq X\leq U \mid XH = HX\}$ 
-%of subgroups of in the interval $\lb U\cap H, U \rb$ that permute with $H$ 
-is a sublattice of $\lb U\cap H, U \rb$ that is isomorphic to the lattice $\lb H, UH \rb$.
-% The fact that these two sets are order isomorphic is probably well known, and
-% the fact $\lb U\cap H, U \rb^H$  is a sublattice of $\lb U\cap H, U \rb$ is not very
-% difficult to prove.  Nonetheless, 
-We have found this result to be very useful
-for proving that certain properties are interval enforceable.
+% As mentioned, we wish to classify group properties according to whether or not
+% they can be deduced from the structure of a subgroup lattice interval.  We
+% classify a number of group properties in this way and prove, for example, that
+% while insolubility is interval enforceable, solubility is not even core-free
+% interval enforceable.  Another contribution is Lemma~\ref{lemma-wjd-4}, which
+% generalizes a well known result as follows:
+% If $U$ and $H$ are permuting subgroups of a group -- that is $UH = HU$ -- then
+% %the set $\lb U\cap H, U \rb^H :=\lb U\cap H, U \rb \cap \{X\leq U \mid XH = HX\}$ 
+% the set $\lb U\cap H, U \rb^H :=\{U\cap H \leq X\leq U \mid XH = HX\}$ 
+% %of subgroups of in the interval $\lb U\cap H, U \rb$ that permute with $H$ 
+% is a sublattice of $\lb U\cap H, U \rb$ that is isomorphic to the lattice $\lb H, UH \rb$.
+% % The fact that these two sets are order isomorphic is probably well known, and
+% % the fact $\lb U\cap H, U \rb^H$  is a sublattice of $\lb U\cap H, U \rb$ is not very
+% % difficult to prove.  Nonetheless, 
+% We have found this result to be very useful
+% for proving that certain properties are interval enforceable.
 
-It is well known that if $U$ is normalized by $H$ then the
-%set $\lb U\cap H, U \rb_H :=\lb U\cap H, U \rb \cap \{X \mid H \subseteq N_{UH}(X)\}$ 
-set %$\lb U\cap H, U \rb_H$ 
-of subgroups in $\lb U\cap H, U \rb$ that are normalized by $H$ is order isomorphic
-%a sublattice of $\lb U\cap H, U \rb$ that is isomorphic 
-to the interval $\lb H, UH \rb$ (see, e.g.,
-\cite{Borner:1999}). In many situations, this result is quite useful for proving
-that certain properties are interval enforceable.  However, in some applications
-(see, e.g., Sections \ref{sec:parachute-lattices} and \ref{sec:application}
-below) %, and~\cite[\S6.3]{DeMeo:thesis}.)
-%that has special relevance to the \acs{FLRP} 
-%(see Section~\ref{sec:application}), 
-we can only assume that the groups $H$ and $U$ permute, but neither one normalizes
-the other.
-These instances requires the more general result mentioned above (and proved
-below as Lemma~\ref{lemma-wjd-4}). 
+% It is well known that if $U$ is normalized by $H$ then the
+% %set $\lb U\cap H, U \rb_H :=\lb U\cap H, U \rb \cap \{X \mid H \subseteq N_{UH}(X)\}$ 
+% set %$\lb U\cap H, U \rb_H$ 
+% of subgroups in $\lb U\cap H, U \rb$ that are normalized by $H$ is order isomorphic
+% %a sublattice of $\lb U\cap H, U \rb$ that is isomorphic 
+% to the interval $\lb H, UH \rb$ (see, e.g.,
+% \cite{Borner:1999}). In many situations, this result is quite useful for proving
+% that certain properties are interval enforceable.  However, in some applications
+% (see, e.g., Sections \ref{sec:parachute-lattices} and \ref{sec:application}
+% below) %, and~\cite[\S6.3]{DeMeo:thesis}.)
+% %that has special relevance to the \acs{FLRP} 
+% %(see Section~\ref{sec:application}), 
+% we can only assume that the groups $H$ and $U$ permute, but neither one normalizes
+% the other.
+% These instances requires the more general result mentioned above (and proved
+% below as Lemma~\ref{lemma-wjd-4}). 
 
 \section{Notation and definitions}
 \label{sec:notation-definitions}
@@ -532,8 +445,8 @@ $G$. By the first isomorphism theorem for
   groups, this is equivalent to: 
 $G/N\in \sK$ whenever $G\in \sK$ and $N\subnormal G$.  For algebras, 
 $\bH(\sK) = \sK$ holds if and only if $\bA/\theta \in \sK$ for all $\bA\in \sK$
-  and all $\theta \in \Con\bA$ (where $\Con\bA$ denotes the lattice of
-  congruence relations of $\bA$). 
+  and all $\theta \in \Con\bA$, where $\Con\bA$ denotes the lattice of
+  congruence relations of $\bA$. 
 
 Apart from possible notational differences, the foregoing terminology is
 standard.  We now introduce some new terminology that we find
@@ -567,14 +480,11 @@ useful in applications.
 
 \section{Results}
 Clearly, if $\cP$ is an interval enforceable property, then it is also
-core-free interval enforceable.  There is a simple
-%Our first lemma %Lemma~\ref{lemma-wjd-2} above 
+core-free interval enforceable.  There is an easy
 sufficient condition under which the converse holds.  
-First, if $\cP$ is a group property and $\sG_{\cP}$ the
-class of groups with property $\cP$, then by $\sG_{\cP}^c$ we denote the class
-$\{G\in \G \mid G\nvDash \cP\}$ 
-of groups that do not have property $\cP$.
-%\noindent {\bf Lemma~\ref{lemma-wjd-2}${}'$.}
+Suppose $\cP$ is a group property, let $\sG_{\cP}$  denote the
+class of groups with property $\cP$, and let
+ $\sG_{\cP}^c$ denote the class of groups that do not have property $\cP$.
 \begin{lemma}
 \label{lemma-wjd-2}
 Suppose $\cP$ is a core-free interval enforceable property.  
@@ -630,7 +540,7 @@ images.\footnote{Recall, for groups \defn{subdirectly irreducible} is equivalent
   decomposition into subdirectly irreducibles, say, $G\hookrightarrow G/N_1 \times \cdots\times
   G/N_n$, so there are always  subdirectly irreducible homomorphic images.}
 In Sections \ref{sec:parachute-lattices} and \ref{sec:application} below we describe
-lattices with which we can prove that following classes are at least 
+lattices with which we can prove that the following classes are at least 
 \acs{cfIE}: 
 \begin{itemize}
 \item $\sG_2 = $ the subdirectly irreducible groups;
@@ -762,7 +672,7 @@ Fix a finite nonabelian simple
   $n$-element set.
   The dual lattice $L'$ is an upper interval of $\Sub(U)$, namely,
   $L'\cong \lb D\bar{G}, U \rb$.\footnote{These facts, which were proved by Kurzweil
-    in~\cite{Kurzweil:1985}, are discuss in greater detail in~\cite[Section 2.2]{DeMeo:thesis}.} 
+    in~\cite{Kurzweil:1985}, are discussed in greater detail in~\cite[Section 2.2]{DeMeo:thesis}.} 
 
   \begin{figure}[!h]
 \begin{center}
@@ -820,7 +730,7 @@ Fix a finite nonabelian simple
   First note that if $u = (t_1,\dots, t_n, 1)$, then
   %ll other $t_k$ distinct, and $g=1$.  
   \begin{align*}
-  u n u^{-1} &= (t_1,\dots, t_n, 1) (d, \dots, d, x) (t_1^{-1},\dots, t_n^{-1}, 1)\\
+  u w u^{-1} &= (t_1,\dots, t_n, 1) (d, \dots, d, x) (t_1^{-1},\dots, t_n^{-1}, 1)\\
   &=(t_1 d \,t_{x(1)}^{-1},\dots, t_nd \,t_{x(n)}^{-1}, 1) \in N,
   \end{align*}
   and this implies that $t_1 d\, t_{x(1)}^{-1} = t_2 d\, t_{x(2)}^{-1} =\cdots = t_nd \,t_{x(n)}^{-1}$. 
@@ -959,16 +869,19 @@ Let $U_0 = U\cap H$.  Then
 \end{enumerate}
 \end{lemma}
 \begin{remarks}
+The expression $\lb H, UH \rb  \cong  \lb U_0, U \rb^H$ means
+that $\lb H, UH \rb$ and $\lb U_0, U \rb^H$ are isomorphic as lattices. Thus,
+when two subgroups permute, we can identify the interval above either one of 
+them with the set of subgroups below the other that permute with the first.  
+The expression $\lb U_0, U \rb^H \leq \lb U_0, U \rb$ means that
+the lattice $\lb U_0, U \rb^H$ is, in fact, a sublattice of 
+$\lb U_0, U \rb$. That is, meets and joins in
+$\lb U_0, U \rb^H$ coincide with those in $\lb U_0, U \rb$.
 Part (ii) of Lemma~\ref{lemma-wjd-4} is a standard result (see, e.g.,
-\cite{Borner:1999}). It seems likely that part (i) of the lemma is also well
-known, though we have not seen it elsewhere. 
+\cite{Borner:1999} or~\cite{Isaacs:2008}).
 Since $G=UH$ is a group, the hypothesis of (ii) is equivalent to
 $H\leq N_G(U)$, and the hypothesis of (iii) is equivalent to $U\leq N_G(H)$.
-Part (i) of the lemma says that when two subgroups permute, we can
-identify the interval above either one of them with the sublattice of
-subgroups below the other that permute with the first.
-Part (ii) is similar except we identify the interval above $H$ with
-the  sublattice of $H$-invariant subgroups below $U$.  Once we have proved (i), the
+Once we have proved (i), the
 proof of (iii) follows trivially from the standard isomorphism theorem for
 groups, so we omit the details.
 \end{remarks}
@@ -1164,7 +1077,9 @@ If we can prove for each $1\leq i\leq n$ that $\core_G(K_i)=1$, then $G\in
 \sG_i$, proving that (B) implies (C). 
 
 If $L \cong \2$, the two element lattice, or if $L_j\cong \2$ for all $1\leq
-j\leq n$, then the theorem is vacuously true.  So we can assume without loss of
+j\leq n$, then the consequent of the implication in (C) holds trivially.
+%% TODO: CHECK THIS MORE CAREFULLY %%
+So we can assume without loss of
 generality that $L\ncong \2$ and that there is at least one $1\leq j\leq n$ for which
 $L_j\ncong \2$. Let $N$ be a minimal normal subgroup of $G$ and suppose $N\leq
 K_i$.  Since $H$ is core-free, $K_i = NH$.  
@@ -1593,9 +1508,7 @@ a minimal normal subgroup $1\neq N \ssubnormal G$
   contained in $M_2$. %, and therefore a minimal normal subgroup of $G$.  
   Since $H, J_1, J_2$ are core-free, $NH=M_2$.  Consider the centralizer,
   $C_G(N)$, of $N$ in $G$.  Of course, this is a normal subgroup 
-  of $G$.\footnote{The centralizer of a normal subgroup $N\subnormal G$ is itself
-    normal in $G$.  For, it is the kernel of the conjugation action of $G$ on
-    $N$. Thus, $C_G(N) \subnormal N_G(N) = G$.} 
+  of $G$.
 If $C_G(N) = 1$, then, since minimal normal subgroups
   centralize each other, $N$ must be the unique minimal normal subgroup of $G$.
   Furthermore, $M_1$ must be core-free in this case.  Otherwise 
@@ -1789,7 +1702,8 @@ being either almost simple, of product action type, or of diagonal type (see \ci
 
  \bibliography{wjd}
 % \bibliographystyle{spmpsci}
-\bibliographystyle{amsplain}
+%\bibliographystyle{amsplain}
+\bibliographystyle{plainurl}
 
 
 \end{document}
