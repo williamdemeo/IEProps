@@ -7,7 +7,7 @@
 \usetikzlibrary{calc}
 \usepackage[colorlinks=true,urlcolor=black,linkcolor=black,citecolor=black]{hyperref}
 \usepackage{acronym}
-
+%\acsetup{first-long-format=\itshape}
 %%%%%%%%%%%%% MY MACROS %%%%%%%%%%%%%%%%%
 \newcommand{\lb}{\ensuremath{\llbracket}}
 \newcommand{\rb}{\ensuremath{\rrbracket}}
@@ -202,10 +202,10 @@ universal algebra.
 
 \maketitle
 
-\newacro{FLRP}{Finite Lattice Representation Problem}
-\newacro{IE}{Interval Enforceable}
-\newacro{cfIE}[cf-IE]{Core-free Interval Enforceable}
-\newacro{minIE}[min-IE]{Minimal Interval Enforceable}
+\newacro{FLRP}{{\it Finite Lattice Representation Problem}}
+\newacro{IE}{{\it interval enforceable}}
+\newacro{cfIE}[cf-IE]{{\it core-free interval enforceable}}
+\newacro{minIE}[min-IE]{{\it minimal interval enforceable}}
 \newacro{CFSG}{Classification of Finite Simple Groups}
 
 
@@ -230,8 +230,8 @@ $G$.
 
 Historically, less attention was paid to the local structure of the
 subgroup lattice of a finite group, perhaps because it seemed that very little
-about $G$ could be inferred from knowledge of, say, an upper
-  interval $\lb H,G \rb := \{K \mid H\leq K \leq G\}$ in the subgroup lattice of $G$.
+about $G$ could be inferred from knowledge of, say, an \emph{upper
+  interval} $\lb H,G \rb = \{K \mid H\leq K \leq G\}$ in the subgroup lattice of $G$.
 Recently, however, this topic has attracted more attention (e.g.,
 \cite{Aschbacher:2009,Lucchini:1997,Basile:2001,Borner:1999,Kohler:1983,Lucchini:1994a,Palfy:1988,Palfy:1995}),
 mostly owing to its connection to the most important open problem in
@@ -241,7 +241,7 @@ universal algebra,
 %% upper intervals in alternating or symmetric groups.
 the \ac{FLRP}. This is the problem of
 characterizing the lattices that are (isomorphic to) congruence lattices of
-finite algebras (see, e.g.,~\cite{Berman:1970,DeMeo:thesis,Palfy:1995,Palfy:2001}). 
+finite algebras (see~\cite{Berman:1970,DeMeo:thesis,Palfy:1995,Palfy:2001}). 
 There is a remarkable theorem relating this problem to intervals in subgroup
 lattices of finite groups. 
 \begin{theorem}[\Palfy\ and \Pudlak~\cite{Palfy:1980}]
@@ -263,9 +263,9 @@ is no finite group $G$ with $L \cong \lb H,G \rb$ for some $H< G$, then the
 In this paper we propose a new classification of group properties according to
 whether or not they can be deduced from the assumption that $\Sub(G)$ has an upper
 interval isomorphic to some finite lattice.  We believe that discovering which 
-group properties can (cannot) be connected to local subgroup lattice
-structure in this way is worthwhile on its own, but we also show
-how such a classification could be used to find a solution to the \acs{FLRP}. 
+group properties can (or cannot) be connected to the local structure of a
+subgroup lattice is itself a worthwhile endeavor, but we will also describe how
+such a classification could be used to solve the \acs{FLRP}.  
 
 Suppose $\cP$ is a \emph{group theoretical property} 
 (defined in Section~\ref{sec:notation-definitions}) 
@@ -277,18 +277,18 @@ such a  $\cP$ an \emph{interval enforceable} (\IE) property.
 An \defn{interval enforceable class of groups} is a class of all groups having
 property $\cP$, for some interval enforceable property $\cP$.
 
-Merely requiring that $L$ be isomorphic to an upper interval in $\Sub(G)$ seems quite
-weak, and it is difficult to find many properties that can be enforced by this
-assumption,
-so we strengthen the assumption and ask what properties can be imposed on a
-group $G$ by some finite lattice $L\cong\lb H,G \rb$ if we assume $H$ is a \emph{core-free}
-subgroup of $G$, that is, $H$ contains no nontrivial normal subgroups of $G$.  
-We call such properties \ac{cfIE}.
+Although it depends on the lattice $L$, generally speaking it is difficult to 
+deduce very much about the group $G$ from the assumption that $L$ is isomorphic
+to an upper interval in $\Sub(G)$. However, this situation changes if, in
+addition to the hypothesis $L\cong\lb H,G \rb$, we add the hypothesis that the
+subgroup $H$ is \emph{core-free} in $G$; that is, $H$ contains no nontrivial
+normal subgroup of $G$.  Properties of $G$ that can be deduced from these
+assumptions are what we call \ac{cfIE}.  
 
 Extending this idea, we consider finite collections $\sL$ of finite lattices
 and ask what can be proved about a group $G$ if one assumes that each 
 $L_i\in \sL$ is isomorphic to an upper interval $\lb H_i, G \rb\leq \Sub(G)$, with
-$H_i$ core-free in $G$.  Our main result (Theorem~\ref{thm-wjd-1}) connects this idea to
+each $H_i$ core-free in $G$.  Our main result (Theorem~\ref{thm-wjd-1}) connects this idea to
 the \acs{FLRP}, as follows:\\[6pt]
 {\it 
 Statement (B) of Theorem~\ref{thm:P5} is equivalent to each of the following statements:
@@ -317,7 +317,7 @@ $H_i$ that is core-free in $G$. % for some core-free $H_i\leq G$.
 \end{enumerate}
 }
 
-Core-free interval enforceable properties are intimately related to permutation
+Core-free interval enforceable properties are connected to permutation
 representations of groups.   
 If $H$ is a core-free subgroup of $G$, then $G$ has a faithful permutation 
 representation $\phi:G\hookrightarrow \Sym(G/H)$.
@@ -332,9 +332,9 @@ lattice of $G$.\footnote{See \cite[Lemma 4.20]{alvi:1987}
 or~\cite[Theorem 1.5A]{Dixon:1996}.}
 This puts statement (E) into perspective.
 If the \acs{FLRP} has a positive answer, then no matter 
-what we take as our finite collection $\sL$ -- for example, we
+what we take as our finite collection $\sL$---for example, we
 might take $\sL$ to be \emph{all} finite lattices with
-at most $N$ elements for some large $N< \omega$ -- we can always find a \emph{single}
+at most $N$ elements for some large $N< \omega$---we can always find a \emph{single}
 finite group $G$ such that every lattice in $\sL$ is a core-free upper interval in
 $\Sub(G)$.
 As a result, this group $G$ must have so many faithful
@@ -420,9 +420,12 @@ A \defn{group theoretical property}, or simply \defn{property of groups},
 is a property $\cP$ such that if a group $G_0$ has property $\cP$ and
 $G_1\cong G_0$, then $G_1$ has property $\cP$.\footnote{It seems there
   is no single standard definition of \emph{group theoretical class}.
-  While some authors (e.g.,~\cite{Doerk:1992}, \cite{BBE:2006}) use the definition given here,
-  others (e.g.~\cite{Robinson:1996}, \cite{Rose:1978}) require that a group
-theoretical class contain groups of order~1.}  
+  While some authors (e.g.,~\cite{Doerk:1992}, \cite{BBE:2006}) use the same
+  definition we use here, others (e.g.~\cite{Robinson:1996}, \cite{Rose:1978})
+  require that every group theoretical class contains the one element group. 
+  In the sequel we consider negations of group properties, and we would
+  like these to qualify as group properties.  Therefore, we don't require
+  that every group theoretical class contains the one element group.}   
 Thus if $\sG_{\cP}$ denotes the collection of groups with group theoretical
 property $\cP$, then  $\sG_{\cP}$  is a class of groups, and belonging to a
 class of groups is a group theoretical property.  Therefore, we need not
