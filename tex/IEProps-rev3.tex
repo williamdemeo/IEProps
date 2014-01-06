@@ -254,8 +254,8 @@ The following statements are equivalent:
   an interval in the subgroup lattice of a finite group.
 \end{enumerate}
 \end{theorem}
-If these statements turn out to be true, we will say ``the \acs{FLRP} has
-a positive answer.'' Otherwise, we say ``the \acs{FLRP} has a negative answer.''
+If these statements are true (resp., false), then we say the \acs{FLRP} has
+a positive (resp., negative) answer. 
 Thus, if we can find a finite lattice $L$ for which it can be proved that there
 is no finite group $G$ with $L \cong \lb H,G \rb$ for some $H< G$, then the
 \acs{FLRP} has a negative answer.  
@@ -263,33 +263,53 @@ is no finite group $G$ with $L \cong \lb H,G \rb$ for some $H< G$, then the
 In this paper we propose a new classification of group properties according to
 whether or not they can be deduced from the assumption that $\Sub(G)$ has an upper
 interval isomorphic to some finite lattice.  We believe that discovering which 
-group properties can (or cannot) be connected to the local structure of a
-subgroup lattice is itself a worthwhile endeavor, but we will also describe how
+group properties can (or cannot) be connected in this way to the local structure
+of a subgroup lattice is itself a worthwhile endeavor, but we will also describe how
 such a classification could be used to solve the \acs{FLRP}.  
 
-Suppose $\cP$ is a \emph{group theoretical property} 
-(defined in Section~\ref{sec:notation-definitions}) 
+Suppose $\cP$ is a \emph{group theoretical property}\footnote{This and other
+  italicized terms in the introduction will be defined more formally in
+  Section~\ref{sec:notation-definitions}.}  
 and suppose there exists a finite lattice $L$ such that if $G$ is a finite group
 with $L \cong \lb H,G \rb$ for some $H\leq G$, then $G$ has property $\cP$.  We call
-such a  $\cP$ an \emph{interval enforceable} (\IE) property.  
+such a property $\cP$ \ac{IE} \emph{by} $L$.
 % Given an \IE\ property $\cP$, the assiciated \defn{interval enforceable class of
 %   groups} is the class of all groups having property $\cP$, 
 An \defn{interval enforceable class of groups} is a class of all groups having
 property $\cP$, for some interval enforceable property $\cP$.
 
 Although it depends on the lattice $L$, generally speaking it is difficult to 
-deduce very much about the group $G$ from the assumption that $L$ is isomorphic
-to an upper interval in $\Sub(G)$. However, this situation changes if, in
-addition to the hypothesis $L\cong\lb H,G \rb$, we add the hypothesis that the
-subgroup $H$ is \emph{core-free} in $G$; that is, $H$ contains no nontrivial
-normal subgroup of $G$.  Properties of $G$ that can be deduced from these
-assumptions are what we call \ac{cfIE}.  
+deduce very much about a group $G$ from the assumption that an upper interval
+in $\Sub(G)$ is isomorphic to $L$.  It gets easier easier if, in addition to the
+hypothesis $L\cong\lb H,G \rb$, we assume that the subgroup $H$ is
+\emph{core-free} in $G$; that is, $H$ contains no nontrivial normal subgroup of
+$G$.  Properties of $G$ that can be deduced from these assumptions are what we
+call \ac{cfIE}.   
 
 Extending this idea, we consider finite collections $\sL$ of finite lattices
 and ask what can be proved about a group $G$ if one assumes that each 
 $L_i\in \sL$ is isomorphic to an upper interval $\lb H_i, G \rb\leq \Sub(G)$, with
-each $H_i$ core-free in $G$.  Our main result (Theorem~\ref{thm-wjd-1}) connects this idea to
-the \acs{FLRP}, as follows:\\[6pt]
+each $H_i$ core-free in $G$.  Clearly, if $\Sub(G)$ has such upper intervals,
+and if corresponding to each $L_i\in \sL$ there is a property
+$\cP_i$ that is \ac{cfIE} by $L_i$, then $G$ must have all of the properties
+$\cP_i$. A related question is the following: Given a set $\sP$ of
+\ac{cfIE} properties, is the conjunction $\Meet \sP$ \ac{cfIE}?  
+Corollary \ref{cor:isle-prop-groups-1} answers this question affirmatively. 
+
+In this paper, we will identify some group properties that are \ac{cfIE}, and
+others that are not. We will see that the \ac{cfIE} properties
+that we have found thus far are negations of common group properties (for
+example, ``not solvable,'' ``not almost simple,'' ``not alternating,'' ``not
+symmetric'').  Moreover, we prove that in these special cases the
+corresponding group properties (``solvable,'' ``almost simple,''
+``alternating,''  ``symmetric'') that are not \ac{cfIE}.  This and
+other considerations suggest that a group property and its
+negation cannot both be \ac{cfIE}.  As yet, we are unable to prove this.
+A related question is whether we should expect that, for every group property
+$\cP$, either $\cP$ is \ac{cfIE} or $\neg \cP$ is \ac{cfIE}. 
+
+One of our main results (Theorem~\ref{thm-wjd-1}) connects the
+foregoing ideas with the \acs{FLRP}, as follows:\\[6pt]
 {\it 
 Statement (B) of Theorem~\ref{thm:P5} is equivalent to each of the following statements:
 \begin{enumerate}
@@ -627,10 +647,18 @@ If $\cP$ is core-free interval enforceable by a group representable lattice,
 then $\neg \cP$ is not core-free interval enforceable by a group representable lattice.
 \end{conjecture}
 
-We confirm a special case of the foregoing conjecture -- namely, the case when
-$\cP$ is insolubility. Indeed, the following lemma implies that the class of
-soluble groups, and more generally any class of groups that omits certain wreath
-products, cannot be core-free interval enforceable by a group representable lattice.
+We will confirm a few special cases of the foregoing conjecture---in particular, the cases
+when $\cP$ means ``not solvable'' or ``not almost simple.'' Indeed, 
+Lemma~\ref{lem:IE-must-have-wreaths} below implies that the class of solvable
+groups, and more generally any class of groups that omits certain wreath
+products, cannot be core-free interval enforceable by a group representable
+lattice. Before stating and proving this lemma, however, we pause to state a
+result that gives further support of for the conjecture above.
+
+\begin{prop}
+  The following statments are equivalent...
+\end{prop}
+
 \begin{lemma}
   \label{lem:IE-must-have-wreaths}
 Suppose $\cP$ is core-free interval enforceable by a group
