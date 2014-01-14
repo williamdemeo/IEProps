@@ -190,15 +190,7 @@ excellent suggestions that greatly improved the presentation of the paper.}
 
 \begin{abstract}
 
-We propose a classification of group properties according to whether they can be
-deduced from the assumption that a group's subgroup lattice contains an interval
-isomorphic to some lattice.  Suppose $\cP$ is a group property and suppose there
-exists a lattice $L$ such that if $G$ is a group with $L$ isomorphic to an interval 
-$\lb H,G \rb$ in $\Sub(G)$, with $H$ core-free, then $G$ has property $\cP$.  We
-call such $\cP$ \emph{core-free interval enforceable}. Among other
-things we show that if both a property and its negation could be proved
-core-free interval enforceable, this would settle an important open question in
-universal algebra.
+We propose a classification of group properties according to whether they can be deduced from the assumption that a group's subgroup lattice contains an interval isomorphic to some lattice. We are able to classify a few group properties as being ``interval enforceable'' in this sense, and we establish that other properties satisfy a weaker notion of ``core-free interval enforceable.''  We also show that if there exists a group property and its negation that are both core-free interval enforceable, this would settle an important open question in universal algebra.
 
 \end{abstract}
 
@@ -217,19 +209,19 @@ universal algebra.
 
 \section{Introduction}
 \label{sec:intro}
-The study of subgroup lattices has a long history, starting with 
+The study of subgroup lattices has a long history that began with
 Richard Dedekind~\cite{Dedekind:1877} 
 and 
 Ada Rottlaender~\cite{Rottlaender:1928}, and
-later a number of important contributions by Reinhold Baer, 
+continued with important contributions by Reinhold Baer, 
 {\O}ystein Ore, 
 Michio Suzuki, 
 Roland Schmidt, 
 and many others (see Schmidt~\cite{Schmidt:1994}).
-Much of this work focuses on the problem of inferring
-properties of a group $G$ based on the structure of its lattice of subgroups,
-$\Sub(G)$,  or, conversely,  inferring lattice theoretical properties of $\Sub(G)$ from properties of
-$G$. 
+Much of this work focuses on the problem of deducing
+properties of a group $G$ from assumptions about the structure of its lattice of
+subgroups, $\Sub(G)$,  or, conversely, deducing lattice theoretical properties
+of $\Sub(G)$ from assumptions about $G$. 
 
 Historically, less attention was paid to the local structure of the
 subgroup lattice of a finite group, perhaps because it seemed that very little
@@ -238,7 +230,7 @@ about $G$ could be inferred from knowledge of, say, an \emph{upper
 in the subgroup lattice of $G$.
 Recently, however, this topic has attracted more attention (see, e.g.,
 \cite{Aschbacher:2009,Lucchini:1997,Basile:2001,Borner:1999,Kohler:1983,Lucchini:1994a,Palfy:1988,Palfy:1995}),
-mostly owing to its connections with one of the most important open
+mostly owing to its connection with one of the most important open
 problems in universal algebra,
 the \ac{FLRP}. This is the problem of
 characterizing the lattices that are (isomorphic to) congruence lattices of
@@ -265,19 +257,18 @@ In this paper we propose a new classification of group properties according to
 whether or not they can be deduced from the assumption that $\Sub(G)$ has an upper
 interval isomorphic to some finite lattice.  We believe that discovering which 
 group properties can (or cannot) be connected to the local structure
-of a subgroup lattice is itself a worthwhile endeavor, but we will also describe how
-such a classification could be used to solve the \acs{FLRP}.  
+of a subgroup lattice is itself a worthwhile endeavor, but we will also describe 
+how this classification could provide a solution of the \acs{FLRP}.  
 
 Suppose $\cP$ is a \emph{group theoretical property}\footnote{This and other
   italicized terms in the introduction will be defined more formally in
   Section~\ref{sec:notation-definitions}.}  
 and suppose there exists a finite lattice $L$ such that if $G$ is a finite group
 with $L \cong \lb H,G \rb$ for some $H\leq G$, then $G$ has property $\cP$.  We call
-such a property $\cP$ \ac{IE} \emph{by} $L$.
-% Given an \IE\ property $\cP$, the assiciated \defn{interval enforceable class of
-%   groups} is the class of all groups having property $\cP$, 
-An \defn{interval enforceable class of groups} is a class of all groups having
-property $\cP$, for some interval enforceable property $\cP$.
+such a property $\cP$ \ac{IE}.  If the lattice involved is germaine to the
+discussion, we say that $\cP$ is  \emph{interval enforceable by} $L$.
+An \defn{interval enforceable class of groups} is a class of groups all of which
+have a common interval enforceable property.
 
 Although it depends on the lattice $L$, generally speaking it is difficult to 
 deduce very much about a group $G$ from the assumption that an upper interval
@@ -773,19 +764,21 @@ A(C\cap B) &= AC \cap B,\qquad \text{ and }\\
 \end{align}
 \end{theorem}
 
-For $A \in \lb H, G \rb$ we let $A^{\perp(H,G)}$ denote the set of
+For $A \in \lb H, G \rb$, let $A^{\perp(H,G)}$ denote the set of
 complements of $A$ in the interval $\lb H, G\rb$.  That is,
-$A^{\perp(H,G)} = \{B \in \lb H, G \rb \mid A \cap B = H, \, \<A, B\> = G\}.$
+\[
+A^{\perp(H,G)} := \{B \in \lb H, G \rb \mid A \cap B = H, \, \<A, B\> = G\}.
+\]
 % The context will make clear with respect to which interval the
 % symbol $\perp$ is defined.  
 Clearly $H^{\perp(H,G)} = \{G\}$ and $G^{\perp(H,G)} = \{H\}$.
 Recall that an \emph{antichain} of a partially ordered set is a subset of
-pairwise incomparabe elements.
+pairwise incomparable elements.
 
 \begin{corollary}
 \label{cor:dedekind1}
 If $A \in \lb H, G\rb$ and if $A$ permutes with each subgroup in
-$A^{\perp(H,G)}$, then $A^{\perp(H,G)}$ is an antichain or empty.
+$A^{\perp(H,G)}$, then $A^{\perp(H,G)}$ is either an antichain or the empty set.
 \end{corollary}
 \begin{proof}
 If $A^{\perp(H,G)}$ contains fewer that two elements, the result holds
