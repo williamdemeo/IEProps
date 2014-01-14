@@ -195,7 +195,7 @@ exists a lattice $L$ such that if $G$ is a group with $L$ isomorphic to an inter
 $\lb H,G \rb$ in $\Sub(G)$, with $H$ core-free, then $G$ has property $\cP$.  We
 call such $\cP$ \emph{core-free interval enforceable}. Among other
 things we show that if both a property and its negation could be proved
-core-free interval enforceable, this would solve an important problem in
+core-free interval enforceable, this would settle an important open question in
 universal algebra.
 
 \end{abstract}
@@ -232,17 +232,15 @@ $G$.
 Historically, less attention was paid to the local structure of the
 subgroup lattice of a finite group, perhaps because it seemed that very little
 about $G$ could be inferred from knowledge of, say, an \emph{upper
-  interval} $\lb H,G \rb = \{K \mid H\leq K \leq G\}$ in the subgroup lattice of $G$.
-Recently, however, this topic has attracted more attention (e.g.,
+  interval}, $\lb H,G \rb = \{K \mid H\leq K \leq G\}$,
+in the subgroup lattice of $G$.
+Recently, however, this topic has attracted more attention (see, e.g.,
 \cite{Aschbacher:2009,Lucchini:1997,Basile:2001,Borner:1999,Kohler:1983,Lucchini:1994a,Palfy:1988,Palfy:1995}),
-mostly owing to its connection to the most important open problem in
-universal algebra,
-%% Basile~\cite{Basile:2001}, as well as Aschbacher and
-%% Shareshian~\cite{Aschbacher:2009}, prove that certain lattice do not occur as
-%% upper intervals in alternating or symmetric groups.
+mostly owing to its connections with one of the most important open
+problems in universal algebra,
 the \ac{FLRP}. This is the problem of
 characterizing the lattices that are (isomorphic to) congruence lattices of
-finite algebras (see~\cite{Berman:1970,DeMeo:thesis,Palfy:1995,Palfy:2001}). 
+finite algebras (see, e.g., \cite{Berman:1970,DeMeo:thesis,Palfy:1995,Palfy:2001}). 
 There is a remarkable theorem relating this problem to intervals in subgroup
 lattices of finite groups. 
 \begin{theorem}[\Palfy\ and \Pudlak~\cite{Palfy:1980}]
@@ -264,7 +262,7 @@ is no finite group $G$ with $L \cong \lb H,G \rb$ for some $H< G$, then the
 In this paper we propose a new classification of group properties according to
 whether or not they can be deduced from the assumption that $\Sub(G)$ has an upper
 interval isomorphic to some finite lattice.  We believe that discovering which 
-group properties can (or cannot) be connected in this way to the local structure
+group properties can (or cannot) be connected to the local structure
 of a subgroup lattice is itself a worthwhile endeavor, but we will also describe how
 such a classification could be used to solve the \acs{FLRP}.  
 
@@ -299,7 +297,7 @@ Corollary \ref{cor:isle-prop-groups-1} answers this question affirmatively.
 
 In this paper, we will identify some group properties that are \ac{cfIE}, and
 others that are not. We will see that the \ac{cfIE} properties
-that we have found thus far are negations of common group properties (for
+found thus far are negations of common group properties (for
 example, ``not solvable,'' ``not almost simple,'' ``not alternating,'' ``not
 symmetric'').  Moreover, we prove that in these special cases the
 corresponding group properties (``solvable,'' ``almost simple,''
@@ -337,8 +335,8 @@ is isomorphic to an upper interval $\lb H_i, G \rb$ with $H$ core-free in $G$.
 \end{enumerate}
 }
 
-Core-free interval enforceable properties are intimately related to
-permutation representations of groups.   
+Core-free interval enforceable properties are related to
+permutation representations of groups in a manner that we now describe.
 If $H$ is a core-free subgroup of $G$, then $G$ has a faithful permutation 
 representation $\phi:G\hookrightarrow \Sym(G/H)$.
 Let $\<G/H, \phi(G)\>$ denote the algebra comprised of the right cosets
@@ -389,12 +387,12 @@ by the \defn{interval} $\lb H, G \rb$ we mean
 the set $\{K \mid H\leq K \leq G\}$, which is a
 sublattice of $\Sub(G)$.
 % (along with meet and joinoperations defined above).
-That is, $\lb H,G \rb$ is the lattice of those subgroups of $G$ that contain 
-$H$. 
+%% That is, $\lb H,G \rb$ is the lattice of those subgroups of $G$ that contain 
+%% $H$. 
 With this notation, $\Sub(G)=\lb 1,G \rb$.
 When viewing $\lb H,G \rb$ as a
 sublattice of $\Sub(G)$, we sometimes refer to it as an \defn{upper interval}. 
-Given an abstract lattice $L$, if there is no mention of specific groups $H$ and
+Given a lattice $L$, if there is no mention of specific groups $H$ and
 $G$, then the expression $L \cong \lb H, G \rb$ means ``there exist (finite) groups $H
 \leq G$ such that $L$ is isomorphic to the interval $\{K \mid H\leq K \leq G\}$ in
 the subgroup lattice of $G$.''  
@@ -417,13 +415,6 @@ property $\cP$, then  $\sG_{\cP}$  is a class of groups, and belonging to a
 particular class of groups is a group theoretical property.  Therefore, we need not
 distinguish between a property of groups and the class of groups that possess
 this property.
-A group in the class $\sG$ is called a 
-\emph{$\sG$-group}, and 
-% ,
-% and a group with property $\cP$ is called a 
-% \emph{$\cP$-group}.  
-we sometimes write $G \vDash \cP$ to indicate
-that $G$ has property $\cP$. %is a $\cP$-group. 
 
 If $\sK$ is a class of algebras (e.g., a class of groups), then we say that
 $\sK$ is \emph{closed under homomorphic images} and we write $\bH(\sK) = \sK$
@@ -501,7 +492,7 @@ $G/N \in \sG_\cP$.  But $G/N \in \sG_{\cP}^c$, since $\sG_{\cP}^c$ is closed und
 
 In \cite{Palfy:1995}, \Peter\ \Palfy\ gives an example of a lattice that cannot occur as an
 upper interval in the subgroup lattice finite solvable group.  (We give other examples
-in \S\ref{sec:parachute-lattices} and \S\ref{sec:application}.)
+in Section~\ref{sec:parachute-lattices}.) % and \S\ref{sec:application}.)
 In his Ph.D.~thesis~\cite{Basile:2001}, Alberto Basile proves that if
 $G$ is an alternating or symmetric group, then there are certain lattices that
 cannot occur as upper intervals in $\Sub(G)$. Another class of lattices with
@@ -531,7 +522,8 @@ images.\footnote{Recall, for groups \defn{subdirectly irreducible} is equivalent
  Every algebra, in particular every group $G$, has a subdirect
   decomposition into subdirectly irreducibles, say, $G\hookrightarrow G/N_1 \times \cdots\times
   G/N_n$, so there are always  subdirectly irreducible homomorphic images.}
-In Sections \ref{sec:parachute-lattices} and \ref{sec:application} below we describe
+In Section \ref{sec:parachute-lattices} %and \ref{sec:application} 
+below we describe
 lattices with which we can prove that the following classes are at least 
 \acs{cfIE}: 
 \begin{itemize}
@@ -557,9 +549,10 @@ representable.
 
 Suppose there exists a property $\cP$ such that both $\cP$ and
 its negation $\neg \cP$ are interval enforceable by the lattices $L$ and $L_c$,
-respectively.  That is $L\cong \lb H,G \rb$ implies $G \in \sG_\cP$ and 
-$L_c\cong \lb H_c,G_c \rb$ implies $G_c\in \sG_\cP^c$.  Then clearly the
-lattice in Figure~\ref{fig:twopanelchute} could not be group representable.  
+respectively.  That is $L\cong \lb H,G \rb$ implies $G$ has property $\cP$, and 
+$L_c\cong \lb H_c,G_c \rb$ implies $G_c$ does not have property $\cP$.  
+Then clearly the lattice in Figure~\ref{fig:twopanelchute} could not be group
+representable.   
 \begin{figure}[!h]
   \centering
 \begin{tikzpicture}[scale=0.7]
@@ -588,20 +581,23 @@ negation are interval enforceable by the lattices $L$ and $L_c$, then already
 at least one of these lattices is not group representable.
 \begin{lemma}
 \label{lemma:ie-prop-and-neg}
-  If $\cP$ is a group property that is interval enforceable by a group representable lattice,
-  then $\neg \cP$ is not interval enforceable by a group representable lattice.
+  If $\cP$ is a group property that is interval enforceable by a group
+  representable lattice, then it is not the case that $\neg \cP$ is interval
+  enforceable by a group representable lattice. 
 \end{lemma}
 \begin{proof}
-Assume the contrary.  Then both $\cP$ and its negation $\neg \cP$
-are interval enforceable by group representable lattices $L$ and $L_c$,
-respectively. Let $G$ and $G_c$ be groups for which $L\cong \lb H,G \rb$ and $L_c\cong
-\lb H_c,G_c \rb$ for some $H\leq G$ and $H_c\leq G_c$.
-Then the group $G\times G_c$ has upper intervals 
-$L\cong \lb H\times G_c, G\times G_c \rb$ and 
-$L_c\cong \lb G\times H_c, G\times G_c \rb$.  Thus, by the interval enforceability
-assumptions, the group $G\times G_c$ both is and is not a $\sG_\cP$-group. 
+Assume $\cP$ is 
+interval enforceable by the group representable lattice $L$, and let
+$H\leq G$ be groups for which $L\cong \lb H, G\rb$.
+If $\neg \cP$ is interval enforceable by the group representable
+lattice $L_c$, then there exist $H_c\leq G_c$ satisfying
+$L_c\cong \lb H_c, G_c\rb$. Consider the group $G\times G_c$. This
+has upper intervals $L\cong \lb H\times G_c, G\times G_c \rb$ and 
+$L_c\cong \lb G\times H_c, G\times G_c \rb$ and therefore, by the interval
+enforceability assumptions,  the group $G\times G_c$ has the properties
+$\cP$ and $\neg \cP$ simultaneously, which is a contradiction.
 \end{proof}
-To take a concrete example, insolubility is \IE.  However, solubility is
+To take a concrete example, nonsolvability is \IE.  However, solvability is
 obviously not \IE. For, if $L\cong \lb H, G \rb$ then for any nonsolvable 
 group $K$ we have $L\cong \lb H\times K, G\times K \rb$, and of course $G\times K$ is
 nonsolvable.  Note that here (and in the proof 
@@ -623,12 +619,7 @@ when $\cP$ means ``not solvable'' or ``not almost simple.'' Indeed,
 Lemma~\ref{lem:IE-must-have-wreaths} below implies that the class of solvable
 groups, and more generally any class of groups that omits certain wreath
 products, cannot be core-free interval enforceable by a group representable
-lattice. Before stating and proving this lemma, however, we pause to state a
-result that gives further support of for the conjecture above.
-
-\begin{prop}
-  The following statments are equivalent...
-\end{prop}
+lattice. 
 
 \begin{lemma}
   \label{lem:IE-must-have-wreaths}
@@ -640,7 +631,7 @@ of the form $W = S\wr \bar{U}$ that has property $\cP$.
 
 \begin{proof}
   Let $L$ be a group representable lattice such that if $L\cong \lb H,G \rb$ and
-  $\core_G(H)=1$ then $G\vDash \cP$.
+  $\core_G(H)=1$ then $G\in \sG_\cP$.
   Since $L$ is group representable, there exists a $\cP$-group $G$ with $L
   \cong \lb H,G \rb$. 
   We apply an idea of Hans Kurzweil (see~\cite{Kurzweil:1985}) twice.
@@ -757,226 +748,6 @@ The class of solvable groups is an example.
 %\vskip2mm
 
 
-
-\subsection{Dedekind's rule and its consequences}
-\label{sec:dedekinds-rule}
-When $A$ and $B$ are subgroups of a group $G$, by $AB$ we mean the set
-$\{ a b \mid a\in A, b\in B\}$, and we write $A \join B$ or $\<A, B\>$ to denote
-the subgroup of $G$ generated by $A$ and $B$.  
-Clearly $AB \subseteq \<A,B\>$; 
-equality holds if and only if $A$ and $B$ \emph{permute}, by which we mean $A B = B A$.
-
-We will need the following well known result:\footnote{See~\cite[p.~122]{Rose:1978}, for example.}  
-\begin{theorem}[Dedekind's rule]
-  \label{lemma-dedekind}
-Let $G$ be a group and let $A, B$ and $C$ be subgroups of $G$ with $A\leq B$.  Then,
-\begin{align}
-\label{eq:dedekind1}
-A(C\cap B) &= AC \cap B,\qquad \text{ and }\\
-\label{eq:dedekind2}
-(C\cap B)A &= CA \cap B.
-\end{align}
-\end{theorem}
-
-For $A \in \lb H, G \rb$ we let $A^{\perp(H,G)}$ denote the set of
-complements of $A$ in the interval $\lb H, G\rb$.  That is,
-$A^{\perp(H,G)} = \{B \in \lb H, G \rb \mid A \cap B = H, \, \<A, B\> = G\}.$
-% The context will make clear with respect to which interval the
-% symbol $\perp$ is defined.  
-Clearly $H^{\perp(H,G)} = \{G\}$ and $G^{\perp(H,G)} = \{H\}$.
-Recall that an \emph{antichain} of a partially ordered set is a subset of
-pairwise incomparabe elements.
-
-\begin{corollary}
-\label{cor:dedekind1}
-If $A \in \lb H, G\rb$ and if $A$ permutes with each subgroup in
-$A^{\perp(H,G)}$, then $A^{\perp(H,G)}$ is an antichain or empty.
-\end{corollary}
-\begin{proof}
-If $A^{\perp(H,G)}$ contains fewer that two elements, the result holds
-trivially. Let $B_1$ and $B_2$ denote two distinct elements of $A^{\perp(H,G)}$.
-We will prove $\neg (B_1 \leq B_2)$.  Indeed, if $B_1 \leq B_2$, then 
-Theorem~\ref{lemma-dedekind} implies
-\[
-B_1 = B_1H = B_1(A \cap B_2) = B_1A \cap B_2 = G \cap B_2 = B_2,
-\]
-which is a contradiction.  The penultimate equality holds by the hypothesis that
-$A$ permutes with $B_1$. 
-\end{proof}
-
-For the present work, the most important consequence of Dedekind's rule is the
-following: 
-\begin{corollary}
-\label{cor:dedekind2}
-If $H\leq G$ and $N\subnormal G$, then $(HN)^{\perp(H,G)}$ is an
-antichain. 
-\end{corollary}
-\begin{proof}
-Note that $HN$ permutes with each
-subgroup in $\lb H, G\rb$.  Indeed, if $H \leq A \leq G$, then 
-$HNA = HAN = HN = AHN$. Therefore, by Corollary~\ref{cor:dedekind1}, the result holds. 
-\end{proof}
-
-Our next lemma (Lemma~\ref{lemma-wjd-4}) generalizes a standard
-result.  We find this generalization useful for proving that certain properties are
-core-free interval enforceable.
-To state Lemma~\ref{lemma-wjd-4}, we need some new notation.  
-Let $U$ and $H$ be subgroups of a group,
-let $U_0 = U\cap H$, and consider the interval $\lb U_0, U \rb=\{ V \mid U_0 \leq V
-\leq U\}$.   
-It will be helpful to visualize part of the subgroup lattice of
-$\<U,H\>$, as shown in Figure~\ref{fig:intervals}.
-
-
-\begin{figure}[!h]
-\begin{center}
-%{\scalefont{.8}
-  \begin{tikzpicture}[scale=.4]
-    \node (H) at (4,4) [fill,circle,inner sep=\dotsize] {}; \draw (H) node [right] {$H$};
-    \node (U) at (-4,4) [fill,circle,inner sep=\dotsize] {}; \draw (U) node [left] {$U$};
-    \node (U0) at (0,0) [fill,circle,inner sep=\dotsize] {}; 
-    \draw (1,-.5) node {$U_0 = U\cap H$};
-    \node (UH) at (0,8) [fill,circle,inner sep=\dotsize] {}; \draw (UH) node
-          [above] {$\<U,H\>$};
-      \fill[color=gray] 
-    (U) to [out=-10,in=100] (U0) to [out=170,in=-80] (U);
-      \fill[color=lightgray] 
-    (UH) to [out=-10,in=100] (H) to [out=170,in=-80] (UH);
-   \draw[semithick]
-     (H) to [out=190,in=80] (U0) to [out=10,in=-100] (H)
-    (UH) to [out=190,in=80] (U) to [out=10,in=-100] (UH)
-    (U) to [out=-10,in=100] (U0) to [out=170,in=-80] (U)
-    (UH) to [out=-10,in=100] (H) to [out=170,in=-80] (UH);
-    \draw (-6.5,1) node {$\lb U_0, U \rb$};
-    \draw(-4.7,1) to (-2,2);
-%     (-4,1) to [out=30,in=-90] (-2,2);
-
-    \draw (7,7) node {$\lb H, \<U,H\> \rb$};
-    \draw(4.3,7) to (2,6);
-
-  \end{tikzpicture}
-%}
-\end{center}
-  \caption{Some intervals in a subgroup lattice.}
-  \label{fig:intervals}
-\end{figure}
-
-Recall that the usual isomorphism theorem for groups implies
-that 
-if $H$ is a normal subgroup of $\<U, H\>$, 
-then the interval
-$\lb H, \<U, H\> \rb$ is isomorphic to the interval $\lb U\cap H, U \rb$.  The 
-purpose of the next lemma is to relate these two
-intervals in cases where we drop the assumption $H\subnormal \<U,H\>$
-and add the assumption $UH = \<U,H\>$.
-
-If the two subgroups $U$ and $H$ permute, then we define 
-\begin{equation}
-  \label{eq:dedekind-1}
-\lb U_0, U \rb^H = \{ V\in \lb U_0,U \rb \mid VH = HV\},
-\end{equation}
-which consists of those subgroups in $\lb U_0, U \rb$ that permute with
-$H$. 
-
-If $H$ normalizes $U$ (which implies $UH=HU$), 
-then we % and in this case we  (in which case $UH$ is again be a group),
-define
-\begin{equation}
-  \label{eq:dedekind-2}
-\lb U_0, U \rb_H = \{ V\in \lb U_0,U \rb \mid H\leq N_{UH}(V)\}.
-\end{equation}
-This is the set consisting of those subgroups in $\lb U_0, U \rb$ that
-are normalized by $H$ (sometimes called 
-\emph{$H$-invariant subgroups} in $\lb U_0,U \rb$).
-Notice that to even
-define $\lb U_0, U \rb_H$ we must have $H\leq N_{UH}(U)$, and in this case, as we will
-see below, the sublattices 
-$\lb U_0, U \rb_H$ and $\lb U_0, U \rb^H$ coincide.
-
-We are now ready to state the main result relating the sets defined
-in~(\ref{eq:dedekind-1}) and (\ref{eq:dedekind-2}) %(when they exist) 
-to the interval $\lb H, UH \rb$.
-\begin{lemma}
-  \label{lemma-wjd-4}
-Suppose $U$ and $H$ are permuting subgroups of a group. %, that is, suppose $UH$ is a group.
-Let $U_0 = U\cap H$.  Then
-\begin{enumerate}[(i)]
-\item $\lb H, UH \rb  \cong  \lb U_0, U \rb^H \leq \lb U_0, U \rb$.
-\item If $U \subnormal UH$, then  $\lb U_0, U \rb_H  = \lb U_0, U \rb^H \leq \lb U_0, U \rb$.
-\item If $H \subnormal UH$,  then  $\lb U_0, U \rb_H  = \lb U_0, U \rb^H = \lb U_0, U \rb$.
-\end{enumerate}
-\end{lemma}
-\begin{remarks}
-The expression $\lb H, UH \rb  \cong  \lb U_0, U \rb^H$ means
-that $\lb H, UH \rb$ and $\lb U_0, U \rb^H$ are isomorphic as lattices. Thus,
-when two subgroups permute, we can identify the interval above either one of 
-them with the set of subgroups below the other that permute with the first.  
-The expression $\lb U_0, U \rb^H \leq \lb U_0, U \rb$ means that
-the lattice $\lb U_0, U \rb^H$ is, in fact, a sublattice of 
-$\lb U_0, U \rb$. That is, meets and joins in
-$\lb U_0, U \rb^H$ coincide with those in $\lb U_0, U \rb$.
-Part (ii) of Lemma~\ref{lemma-wjd-4} is a standard result (see, e.g.,
-\cite{Borner:1999} or~\cite{Isaacs:2008}).
-Since $G=UH$ is a group, the hypothesis of (ii) is equivalent to
-$H\leq N_G(U)$, and the hypothesis of (iii) is equivalent to $U\leq N_G(H)$.
-Once we have proved (i), the
-proof of (iii) follows trivially from the standard isomorphism theorem for
-groups, so we omit the details.
-\end{remarks}
-
-\begin{proof}
-To prove (i), we first show that the following maps are inverse order isomorphisms:
-\begin{align}
-\label{eq:inverse-isos}
-\phi: \;& \lb H, UH \rb \ni X \mapsto U\cap X \in \lb U_0, U \rb^H\\
-\psi: \;& \lb U_0, U \rb^H \ni V \mapsto VH \in \lb H, UH \rb.\nonumber
-\end{align}
-Then we show that $\lb U_0, U \rb^H$ is a sublattice of $\lb U_0,U \rb$, that is, 
-$\lb U_0, U \rb^H\leq \lb U_0,U \rb$.
-
-Fix $X\in \lb H, UH \rb$. We claim that $U\cap X \in \lb U_0, U \rb^H$. Indeed,
-\[
-    (U\cap X) H = UH \cap X=
-               HU \cap X
-                = H(U \cap X).
-\]
-The first equality holds by~(\ref{eq:dedekind2}) since $H\leq X$, the second holds
-by assumption, and the third by~(\ref{eq:dedekind1}).
-  This proves $U\cap X \in \lb U_0, U \rb^H$.  Moreover, by the first equality,
-$\psi \circ \phi (X) = (U\cap X)H =UH \cap X = X$,
-so $\psi \circ \phi$ is the identity on $\lb H, UH \rb$.
-
-If $V\in \lb U_0, U \rb^H$, then $VH = HV$ implies $VH \in \lb H, UH \rb$. Also, $\phi \circ
-\psi$ is the identity on $\lb U_0, U \rb^H$, since $\phi \circ \psi(V)= VH \cap U =
-V(H\cap U)= VU_0 = V$, by~(\ref{eq:dedekind1}). 
-This proves that $\phi$ and $\psi$ are inverses of each other on the sets indicated, and
-it's easy to see that they are order preserving:
-$X\leq Y$ implies $U\cap X \leq U\cap Y$, and $V\leq W$ implies $VH \leq WH$.
-Therefore, $\phi$ and $\psi$ are inverse order isomorphisms.
-
-To complete the proof of (i), we show that
-$\lb U_0, U \rb^H$ is a sublattice of $\lb U_0, U \rb$.  Suppose $V_1$ and $V_2$ are
-subgroups in $\lb U_0, U \rb$ that permute with $H$.  
-It is easy to see that their join $V_1 \join V_2 = \<V_1, V_2\>$ also permutes
-with $H$, so we just check that their intersection permutes with $H$.  Fix
-$x \in V_1 \cap V_2$ and $h\in H$.  We show $xh = h'x'$ for some $h'\in H, \, x'
-\in V_1\cap V_2$. Since $V_1$ and $V_2$ permute with $H$, we have $xh = h_1 v_1$
-and $xh = h_2 v_2$ for some $h_1, h_2\in H, \, v_1 \in V_1, \, v_2 \in V_2$.
-Therefore, $h_1 v_1 = h_2 v_2$, which implies $v_1 = h_1^{-1}h_2 v_2 \in HV_2$,
-so $v_1$ belongs to $V_1 \cap HV_2$. Note that $V_1 \cap HV_2$ is below both $V_1$ and
-$U\cap HV_2 = \phi \psi(V_2) = V_2$.  Therefore, $v_1 \in V_1 \cap HV_2 \leq V_1
-\cap V_2$, and we have proved that $xh = h_1 v_1$ for $h_1\in H$ and $v_1 \in
-V_1\cap V_2$, as desired. 
-
-To prove (ii), assuming $U\subnormal G:=UH$, we show that if $U_0 \leq V \leq U$,
-then $VH = HV$ if and only if $H\leq N_G(V)$.
-If $H\leq N_G(V)$, then $VH = HV$ (even when $U \notsubnormal G$).
-Suppose $VH = HV$.  We must show $(\forall v\in V)\, (\forall h\in H)\; hvh^{-1}\in
-V$.  Fix $v\in V, \, h\in H$.  Then, $hv = v'h'$ for some $v'\in V,\, h'\in H$, since
-$VH = HV$.  Therefore, $v' h' h^{-1} = hvh^{-1} = u$ for some $u\in U$, since
-$H\leq N_G(U)$. This proves that $hvh^{-1}\in VH\cap U = V(H\cap U) = VU_0 = V$, as
-desired.
-\end{proof}
 
 \subsection{Parachute lattices}
 \label{sec:parachute-lattices}
@@ -1109,7 +880,8 @@ $G/N$ and $H/N$, where $N=\core_G(H)$, and note that
 $\sP \cong \lb H,G \rb \cong \lb H/N,G/N \rb$.)
 Let $K, K_1, \dots, K_n$ be the subgroups of $G$ in which $H$ is maximal
 and for which
-$L \cong \lb K, G \rb$ and $L_i \cong \lb K_i, G \rb,\; 1\leq i\leq n$ (Figure~\ref{fig:parachute} (b)).
+$L \cong \lb K, G \rb$ and $L_i \cong \lb K_i, G \rb,\; 1\leq i\leq n$; see
+Figure~\ref{fig:parachute} (b). 
 If we can prove for each $1\leq i\leq n$ that $\core_G(K_i)=1$, then $G\in
 \sG_i$ by hypothesis, and it will follow that $G \in \bigcap\limits_{i=1}^n
 \sG_i$, proving that (B) implies (C). 
@@ -1225,7 +997,7 @@ We conclude this section by formalizing the remarks of the previous sentence.
 Given two group theoretical properties $\cP_1, \cP_2$, we write
 $\cP_1 \rightarrow \cP_2$ to denote that property 
 $\cP_1$ implies property $\cP_2$. In other words,
-$G\vDash \cP_1$ only if $G\vDash \cP_2$.
+$G$ has property $\cP_1$ only if $G$ has property $\cP_2$.
 Thus $\rightarrow$ provides a natural partial order on any given set of 
 properties, as follows:
 \[
@@ -1233,7 +1005,7 @@ properties, as follows:
 \Longleftrightarrow \quad \sG_{\cP_1}\subseteq
 \sG_{\cP_2},
 \]
-where $\sG_{\cP_i} = \{G\in \G \mid G\vDash \cP_i\}$.
+where $\sG_{\cP_i} = \{G\in \G \mid G \text{ has property } \cP_i\}$.
 The following is an immediate corollary of the parachute construction
 described above.
 \begin{corollary}
@@ -1242,8 +1014,8 @@ described above.
   then $\Meet \sP$ is (cf-)\IE.
 \end{corollary}
 The conjunction $\Meet \sP$ corresponds to the class 
-$\bigcap_{i\in \sI} \sG_{\cP_i} = \{G \in \G \mid (\forall i \in \sI) \; G\vDash
-\cP_i \}$.
+$\bigcap_{i\in \sI} \sG_{\cP_i} = \{G \in \G \mid (\forall i \in \sI) \; 
+G \text{ has property } \cP_i \}$.
  \bibliography{wjd}
 % \bibliographystyle{spmpsci}
 %\bibliographystyle{amsplain}
