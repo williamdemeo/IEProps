@@ -102,6 +102,7 @@
 
 \newcommand{\bL}{\ensuremath{\mathbf{L}}}
 \newcommand{\sL}{\ensuremath{\mathscr{L}}}
+\newcommand{\fL}{\ensuremath{\mathfrak{L}}}
 
 \newcommand{\M}{\ensuremath{\mathbb{M}}}
 \newcommand{\bM}{\ensuremath{\mathbf{M}}}
@@ -364,40 +365,6 @@ representation for each distinct $L_i\in \sL$.  Moreover, the group $G$ having
 this property can be chosen from the class $\bigcap\limits_{i=1}^n \sG_i$, where 
 $\sG_1, \dots, \sG_n$ is an arbitrary collection of \acs{cfIE} classes of groups.
 
-% As mentioned, we wish to classify group properties according to whether or not
-% they can be deduced from the structure of a subgroup lattice interval.  We
-% classify a number of group properties in this way and prove, for example, that
-% while insolubility is interval enforceable, solubility is not even core-free
-% interval enforceable.  Another contribution is Lemma~\ref{lemma-wjd-4}, which
-% generalizes a well known result as follows:
-% If $U$ and $H$ are permuting subgroups of a group -- that is $UH = HU$ -- then
-% %the set $\lb U\cap H, U \rb^H :=\lb U\cap H, U \rb \cap \{X\leq U \mid XH = HX\}$ 
-% the set $\lb U\cap H, U \rb^H :=\{U\cap H \leq X\leq U \mid XH = HX\}$ 
-% %of subgroups of in the interval $\lb U\cap H, U \rb$ that permute with $H$ 
-% is a sublattice of $\lb U\cap H, U \rb$ that is isomorphic to the lattice $\lb H, UH \rb$.
-% % The fact that these two sets are order isomorphic is probably well known, and
-% % the fact $\lb U\cap H, U \rb^H$  is a sublattice of $\lb U\cap H, U \rb$ is not very
-% % difficult to prove.  Nonetheless, 
-% We have found this result to be very useful
-% for proving that certain properties are interval enforceable.
-
-% It is well known that if $U$ is normalized by $H$ then the
-% %set $\lb U\cap H, U \rb_H :=\lb U\cap H, U \rb \cap \{X \mid H \subseteq N_{UH}(X)\}$ 
-% set %$\lb U\cap H, U \rb_H$ 
-% of subgroups in $\lb U\cap H, U \rb$ that are normalized by $H$ is order isomorphic
-% %a sublattice of $\lb U\cap H, U \rb$ that is isomorphic 
-% to the interval $\lb H, UH \rb$ (see, e.g.,
-% \cite{Borner:1999}). In many situations, this result is quite useful for proving
-% that certain properties are interval enforceable.  However, in some applications
-% (see, e.g., Sections \ref{sec:parachute-lattices} and \ref{sec:application}
-% below) %, and~\cite[\S6.3]{DeMeo:thesis}.)
-% %that has special relevance to the \acs{FLRP} 
-% %(see Section~\ref{sec:application}), 
-% we can only assume that the groups $H$ and $U$ permute, but neither one normalizes
-% the other.
-% These instances requires the more general result mentioned above (and proved
-% below as Lemma~\ref{lemma-wjd-4}). 
-
 \section{Notation and definitions}
 \label{sec:notation-definitions}
 In this paper, \emph{all groups and lattices are finite}.  We use 
@@ -445,9 +412,9 @@ $G_1\cong G_0$, then $G_1$ has property $\cP$.\footnote{It seems there
   In the sequel we consider negations of group properties, and we would
   like these to qualify as group properties.  Therefore, we don't require
   that every group theoretical class contains the one element group.}   
-Thus if $\sG_{\cP}$ denotes the collection of groups with group theoretical
+Thus if $\sG_{\cP}$ denotes the collection of all groups having the group
 property $\cP$, then  $\sG_{\cP}$  is a class of groups, and belonging to a
-class of groups is a group theoretical property.  Therefore, we need not
+particular class of groups is a group theoretical property.  Therefore, we need not
 distinguish between a property of groups and the class of groups that possess
 this property.
 A group in the class $\sG$ is called a 
@@ -467,29 +434,34 @@ $G/N\in \sK$ whenever $G\in \sK$ and $N\subnormal G$.  For algebras,
 $\bH(\sK) = \sK$ holds if and only if $\bA/\theta \in \sK$ for all $\bA\in \sK$
   and all $\theta \in \Con\bA$, where $\Con\bA$ denotes the lattice of
   congruence relations of $\bA$. 
-
 Apart from possible notational differences, the foregoing terminology is
-standard.  We now introduce some new terminology that we find
+standard.  
+
+We now introduce some new terminology that we find
 useful.\footnote{The author thanks Bj{\o}rn Kjos-Hanssen and David Ross for suggesting
-  improvements to the wording of these definitions.}
-A group theoretical property $\cP$  (and the associated class $\sG_\cP$) is called 
+  improvements to the wording of these definitions.}  Let $\fL$
+denote the class of all finite lattices, and $\G$ the class of all 
+finite groups. Let $\cP$ be a given group theoretical property and $\sG_\cP$
+the associated class of all groups with property $\cP$.  
+We call $\cP$ (and $\sG_\cP$)
 \begin{itemize}
 \item 
-\ac{IE} provided
+\acf{IE} provided
 \[
-(\exists L)  \; (\forall G) \; \bigl(L\cong \lb H,G \rb \, \longrightarrow \, G \vDash \cP\bigr)
+(\exists L\in \fL)  \; (\forall G \in \G) \; \bigl(L\cong \lb H,G \rb \, \longrightarrow \, G
+\in \sG_\cP \bigr)
 \]
 \item
-\ac{cfIE} provided
+\acf{cfIE} provided
 \[
-(\exists L)  \; (\forall G) \; \bigl(\bigl(L\cong \lb H,G \rb \; \Meet \; \core_G(H)=1\bigr)
-\, \longrightarrow \, G  \vDash \cP\bigr)
+(\exists L\in \fL)  \; (\forall G\in \G) \; \bigl(\bigl(L\cong \lb H,G \rb \; \Meet \; \core_G(H)=1\bigr)
+\, \longrightarrow \, G  \in \sG_\cP \bigr)
 \]
 \item 
-\ac{minIE}
-provided there exists $L$ such that if $L\cong \lb H,G \rb$ for some group $G$ of
-minimal order (with respect to $L\cong \lb H,G \rb$), then
-$G$ is a $\cP$-group.   
+\acf{minIE}
+provided there exists $L\in \fL$ such that if $L\cong \lb H,G \rb$ for some
+group $G\in \G$ of minimal order (with respect to $L\cong \lb H,G \rb$), then
+$G \in \sG_\cP$.
 \end{itemize}
 In this paper we will have little to
 say about min-\IE\ properties.  Nonetheless, we include this class in our list
@@ -503,8 +475,8 @@ Clearly, if $\cP$ is an interval enforceable property, then it is also
 core-free interval enforceable.  There is an easy
 sufficient condition under which the converse holds.  
 Suppose $\cP$ is a group property, let $\sG_{\cP}$  denote the
-class of groups with property $\cP$, and let
- $\sG_{\cP}^c$ denote the class of groups that do not have property $\cP$.
+class of all groups with property $\cP$, and let
+ $\sG_{\cP}^c$ denote the class of all groups that do not have property $\cP$.
 \begin{lemma}
 \label{lemma-wjd-2}
 Suppose $\cP$ is a core-free interval enforceable property.  
@@ -528,7 +500,7 @@ $G/N \in \sG_\cP$.  But $G/N \in \sG_{\cP}^c$, since $\sG_{\cP}^c$ is closed und
 \end{proof}
 
 In \cite{Palfy:1995}, \Peter\ \Palfy\ gives an example of a lattice that cannot occur as an
-upper interval in the subgroup lattice finite soluble group.  (We give other examples
+upper interval in the subgroup lattice finite solvable group.  (We give other examples
 in \S\ref{sec:parachute-lattices} and \S\ref{sec:application}.)
 In his Ph.D.~thesis~\cite{Basile:2001}, Alberto Basile proves that if
 $G$ is an alternating or symmetric group, then there are certain lattices that
@@ -536,14 +508,14 @@ cannot occur as upper intervals in $\Sub(G)$. Another class of lattices with
 this property is described by Aschbacher and Shareshian in~\cite{Aschbacher:2009}. 
 Thus, two classes of groups that are known to be at least \acs{cfIE} are the following:
 \begin{itemize}
-\item $\sG_0 = \mathfrak{S}^c = $ insoluble finite groups;
+\item $\sG_0 = \mathfrak{S}^c = $ nonsolvable finite groups;
 \item $\sG_1 =\bigl\{G\in \G \mid (\forall n<\omega) \; \bigl(G \neq A_n \Meet  G\neq S_n\bigr) \bigr\}$,
 \end{itemize}
 where $A_n$ and $S_n$ denote, respectively,
 the alternating and symmetric groups on
 $n$ letters.
 Note that both classes $\sG_0$ and $\sG_1$ satisfy the hypothesis of \ref{lemma-wjd-2}.
-Explicitly, $\sG_0^c = \mathfrak{S}$, the class of soluble groups, is closed under homomorphic
+Explicitly, $\sG_0^c = \mathfrak{S}$, the class of solvable groups, is closed under homomorphic
 images, as is the class $\sG_1^c$ of alternating and symmetric groups. 
 Therefore, by Lemma~\ref{lemma-wjd-2}, $\sG_0$ and $\sG_1$ are \IE\ classes.
 By contrast, suppose %in Section~\ref{sec:application} we will see an example of a
@@ -630,9 +602,9 @@ $L_c\cong \lb G\times H_c, G\times G_c \rb$.  Thus, by the interval enforceabili
 assumptions, the group $G\times G_c$ both is and is not a $\sG_\cP$-group. 
 \end{proof}
 To take a concrete example, insolubility is \IE.  However, solubility is
-obviously not \IE. For, if $L\cong \lb H, G \rb$ then for any insoluble 
+obviously not \IE. For, if $L\cong \lb H, G \rb$ then for any nonsolvable 
 group $K$ we have $L\cong \lb H\times K, G\times K \rb$, and of course $G\times K$ is
-insoluble.  Note that here (and in the proof 
+nonsolvable.  Note that here (and in the proof 
 of Lemma~\ref{lemma:ie-prop-and-neg}) the group $H\times K$ at the bottom of
 the interval is not core-free.  So a more interesting question is whether a
 property and its negation can both be \acs{cfIE}.  Again, if such a property were
@@ -780,7 +752,7 @@ Fix a finite nonabelian simple
 By the foregoing result we conclude that a class of groups that does
 not include wreath products of the form $S\wr G$, where $S$ is an arbitrary
 finite nonabelian simple group, is not a core-free interval enforceable class. 
-The class of soluble groups is an example.
+The class of solvable groups is an example.
 
 %\vskip2mm
 
@@ -1186,7 +1158,7 @@ in its subgroup lattice must have some rather special properties.
 $i$, and suppose $\sP \cong \lb H, G \rb$, with $H$ core-free in $G$.  
 \begin{enumerate}[(i)]
 \item If $1\neq N \subnormal G$, then $NH = G$ and $C_G(N)=1$.
-\item $G$ is subdirectly irreducible and insoluble.
+\item $G$ is subdirectly irreducible and nonsolvable.
 \end{enumerate}
 \end{lemma}
 \begin{remark}
@@ -1236,13 +1208,13 @@ $N \leq C_G(M) = 1$, by (i).
 Finally, since $G$ has a unique
 minimal normal subgroup that is nonabelian 
 (see the remark preceding the proof),
-$G$ is insoluble.
+$G$ is nonsolvable.
 \end{proof}
 
 To summarize what we have thus far, the lemmas above imply that (B) holds if and only if
 every finite lattice is an interval $\lb H, G \rb$, with $H$ core-free in $G$, where
 \begin{enumerate}[(i)]
-\item $G$ is insoluble, not alternating, and not symmetric;
+\item $G$ is nonsolvable, not alternating, and not symmetric;
 \item $G$ has a unique minimal normal subgroup $M$ which satisfies $MH = G$
 and $C_G(M) = 1$; in particular,
 $M$ is nonabelian and $\core_G(X) = 1$ for all $H\leq X < G$.
@@ -1389,7 +1361,7 @@ Suppose $G$ is a finite group with $\lb H,G \rb\cong L_7$ for some core-free sub
 \item $G$ is a primitive permutation group.
 \item If $N\ssubnormal G$, then $C_G(N) = 1$.
 \item $G$ contains no non-trivial abelian normal subgroup.
-\item $G$ is insoluble.
+\item $G$ is nonsolvable.
 \item $G$ is subdirectly irreducible.
 \item With the possible exception of at most one maximal subgroup,
   all proper subgroups in the interval $\lb H,G \rb$ are core-free. 
