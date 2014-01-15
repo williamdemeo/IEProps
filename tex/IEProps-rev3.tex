@@ -432,14 +432,14 @@ We call $\cP$ (and $\sG_\cP$)
 \item 
 \acf{IE} provided
 \[
-(\exists L\in \fL)  \; (\forall G \in \G) \; \bigl(L\cong \lb H,G \rb \, \longrightarrow \, G
-\in \sG_\cP \bigr)
+(\exists L\in \fL)  \; (\forall G \in \G) \; \bigl(L\cong \lb H,G \rb \; \longrightarrow \; G
+\in \sG_\cP\bigr)
 \]
 \item
 \acf{cfIE} provided
 \[
-(\exists L\in \fL)  \; (\forall G\in \G) \; \bigl(\bigl(L\cong \lb H,G \rb \; \Meet \; \core_G(H)=1\bigr)
-\, \longrightarrow \, G  \in \sG_\cP \bigr)
+(\exists L\in \fL)  \; (\forall G\in \G) \; \bigl( L\cong \lb H,G \rb \; \Meet \; \core_G(H)=1
+\; \longrightarrow \; G  \in \sG_\cP \bigr)
 \]
 \item 
 \acf{minIE}
@@ -470,7 +470,7 @@ If $\bH(\sG_{\cP}^c) = \sG_{\cP}^c$, then $\cP$ is an interval enforceable prope
 Since $\cP$ is \acs{cfIE} there is a lattice $L$ such that
 \begin{equation}
   \label{eq:100}
-\bigl(L \cong \lb H,G \rb \, \Meet \, \core_G(H)=1\bigr) \, \longrightarrow \, G\in \sG_\cP.
+L \cong \lb H,G \rb \; \Meet \; \core_G(H)=1 \; \longrightarrow \; G\in \sG_\cP.
 \end{equation}
 Under the assumption $\bH(\sG_\cP^c) = \sG_\cP^c$ we prove
 \begin{equation}
@@ -505,7 +505,7 @@ Therefore, by Lemma~\ref{lemma-wjd-2}, $\sG_0$ and $\sG_1$ are \IE\ classes.
 By contrast, suppose %in Section~\ref{sec:application} we will see an example of a
 there exists a finite lattice $L$ such that
  \[
- \bigl(L \cong \lb H, G \rb \,\Meet\, \core_G(H)=1\bigr) \, \longrightarrow \, G
+L \cong \lb H, G \rb \,\Meet\, \core_G(H)=1 \; \longrightarrow \; G
  \text{ is subdirectly irreducible.}  %\protect{\footnotemark}}
 \]
 Lemma~\ref{lemma-wjd-2} does not apply in this case since the class of
@@ -813,9 +813,22 @@ $HNA = HAN = HN = AHN$. Therefore, by Corollary~\ref{cor:dedekind1}, the result 
 \subsection{Parachute lattices}
 \label{sec:parachute-lattices}
 We now prove the equivalence of statements (B), (C), 
-and (D) mentioned in Section~\ref{sec:intro}.  
+and (D) mentioned in Section~\ref{sec:intro}, with one caveat.
+We let $\sG^{\mathfrak{m}}$ denote the class of groups that have a maximal core-free
+subgroup. When we mention collections of interval enforceable classes below,
+the class $\sG^{\mathfrak{m}}$ will always be excluded.  This will allow us to
+focus on properties that are not core-free interval enforceable by the
+two-element chain. Similarly, we will consider only properties that are not
+core-free interval enforceable by the one element lattices; namely,
+we don't consider the class of simple groups as one of our \ac{cfIE} classes.
+The point is that, when discussing the lattices that impose certain
+properties on groups, we avoid having to consider the one-element and
+two-element chains. Anyway, in practice, these are not the lattices one uses to
+try to reason about group properties.
+
 (That statement (E) of Section~\ref{sec:intro} is also equivalent to (B) follows
 easily from the arguments given below, so we omit the details.)
+
 \begin{theorem}
 \label{thm-wjd-1}
 The following statements are equivalent:
@@ -824,7 +837,7 @@ The following statements are equivalent:
   an interval in the subgroup lattice of a finite group.
 \item[(C)]
 For every finite lattice $L$, for every finite collection $\sG_1, \dots, \sG_n$
-of \acs{cfIE} classes of groups,
+of \acs{cfIE} classes of groups, excluding $\sG_m$
 there exists a finite group $G \in \bigcap\limits_{i=1}^n \sG_i$ such that $L \cong
 \lb H,G \rb$ for some core-free subgroup $H\leq G$. % core-free in $G$.
 %$\core_G(H) = 1$.
@@ -849,14 +862,16 @@ such that $\bigcap\limits_{i=1}^n \sG_i$ is empty.
 \end{remark}
 
 \begin{proof}
-We prove the equivalence of (B) and (C). 
+We first show that (B) and (C) are equivalent.
 Obviously (C) implies (B).  Assume (B) holds and let $L$ be any finite lattice.  Suppose 
 $\sG_1, \dots, \sG_n$ is a collection of \acs{cfIE} enforceable classes of groups.
-Then there exist finite lattices $L_1, \dots, L_n$ such that $L_i \cong \lb H_i,
-G_i \rb$
-with $\core_G(H_i)=1$ implies $G_i\in \sG_i$.
+Then there exist finite lattices $L_1, \dots, L_n$ such that, for each $i=1,
+\dots, n$,
+\[
+L_i \cong \lb H_i, G_i \rb \; \Meet \; \core_{G_i}(H_i)=1 \; \longrightarrow \; G_i\in \sG_i.
+\]
 Construct a new lattice, denoted $\sP = \sP(L, L_1, \dots, L_n)$, as shown in
-the Hasse diagram of Figure~\ref{fig:parachute} (a).  Note that the bottoms of
+the Hasse diagram of Figure~\ref{fig:parachute} (a), where the bottoms of
 the $L_i$ sublattices are atoms in $\sP$.
 \begin{figure}[centering]
   \caption{The parachute construction.}
