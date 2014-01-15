@@ -12,6 +12,7 @@
 \newcommand{\lb}{\ensuremath{\llbracket}}
 \newcommand{\rb}{\ensuremath{\rrbracket}}
 \newcommand{\<}{\ensuremath{\langle}}
+\newcommand{\cB}{\ensuremath{\mathcal{B}}}
 \renewcommand{\>}{\ensuremath{\rangle}}
 
 \theoremstyle{plain}
@@ -300,32 +301,27 @@ negation cannot both be \ac{cfIE}.  As yet, we are unable to prove this.
 A related question is whether, for every group property
 $\cP$, either $\cP$ is \ac{cfIE} or $\neg \cP$ is \ac{cfIE}. 
 
-One of our main results (Theorem~\ref{thm-wjd-1}) connects the
+Our main result (Theorem~\ref{thm-wjd-1}) connects the
 foregoing ideas with the \acs{FLRP}, as follows:\\[6pt]
 {\it 
-Statement (B) of Theorem~\ref{thm:P5} is equivalent to each of the following statements:
+Statement (B) of Theorem~\ref{thm:P5} is equivalent to the following statement:
+
 \begin{enumerate}
 \item[(C)]
-For every finite lattice $L$, for every finite collection $\sG_1, \dots, \sG_n$
-of \acs{cfIE} classes of groups,
-there exists a finite group $G \in \bigcap\limits_{i=1}^n \sG_i$ such that $L \cong
-\lb H,G \rb$ for some subgroup $H$ that is core-free in $G$. %for some subgroup $H$ that is core-free in $G$.
-\item[(D)]
-For every finite collection $\sL$ of finite lattices, there exists a finite
-group $G$ such that for each $L \in \sL$ we have 
-$L\cong \lb H, G \rb$ for some subgroup $H$ that is core-free in $G$. % for some subgroup $H_i$ that is core-free in $G$.
-\end{enumerate}}
-In fact, the arguments proving the equivalence of these
-statements are easily combined to show that the following is also equivalent to
-statement (B):
-{\it 
-\begin{enumerate}
-\item[(E)]
-For every finite collection $\sL$ of finite lattices, for every finite
-collection $\sG_1, \dots, \sG_n$ of \acs{cfIE} classes of groups, there exists a
-finite group $G \in \bigcap\limits_{i=1}^n \sG_i$ such that each $L_i \in \sL$
-is isomorphic to an upper interval $\lb H_i, G \rb$ with $H$ core-free in $G$.
+Fix $n\geq 2$ and let $\sL = \{L_1, \dots, L_n\}$ be any collection of
+finite lattices at least two of which have more than two elements.
+For each $i = 1, 2, \dots, n$, let $\sG_i$ denote the class that is
+core-free interval enforcable by $L_i$. Then there exists a finite group $G \in
+\bigcap\limits_{i=1}^n \sG_i$ such that for 
+each $L_i \in \sL$ we have $L_i\cong \lb H_i, G \rb$ for some subgroup
+$H_i$ that is core-free in $G$. % for some core-free $H_i\leq G$. 
 \end{enumerate}
+
+\begin{remark}
+By (C), the \acs{FLRP} would have a negative answer if we
+could find a collection $\sG_1, \dots, \sG_n$ of \acs{cfIE} classes
+such that $\bigcap\limits_{i=1}^n \sG_i$ is empty.
+\end{remark}
 }
 
 Core-free interval enforceable properties are related to
@@ -341,7 +337,7 @@ systems of imprimitivity) %denoted $\Con\<G/H, G\>$,
 lattice of $G$.\footnote{See \cite[Lemma 4.20]{alvi:1987}
 %Lemma 8.13 of~\cite{Isaacs:2008}, or 
 or~\cite[Theorem 1.5A]{Dixon:1996}.}
-This puts statement (E) into perspective.
+This puts statement (C) into perspective.
 If the \acs{FLRP} has a positive answer, then no matter 
 what we take as our finite collection $\sL$---for example, we
 might take $\sL$ to be \emph{all} finite lattices with
@@ -505,7 +501,7 @@ Therefore, by Lemma~\ref{lemma-wjd-2}, $\sG_0$ and $\sG_1$ are \IE\ classes.
 By contrast, suppose %in Section~\ref{sec:application} we will see an example of a
 there exists a finite lattice $L$ such that
  \[
-L \cong \lb H, G \rb \,\Meet\, \core_G(H)=1 \; \longrightarrow \; G
+L \cong \lb H, G \rb \; \Meet \; \core_G(H)=1 \; \longrightarrow \; G
  \text{ is subdirectly irreducible.}  %\protect{\footnotemark}}
 \]
 Lemma~\ref{lemma-wjd-2} does not apply in this case since the class of
@@ -777,12 +773,12 @@ pairwise incomparable elements.
 
 \begin{corollary}
 \label{cor:dedekind1}
-If $A \in \lb H, G\rb$ and if $A$ permutes with each subgroup in
-$A^{\perp(H,G)}$, then $A^{\perp(H,G)}$ is either an antichain or the empty set.
+Suppose $A \in \lb H, G\rb$ and suppose $A$ permutes with each subgroup in
+a nonempty subset $\cB \subset A^{\perp(H,G)}$ of its complements. Then $\cB$ is an antichain.
 \end{corollary}
 \begin{proof}
-If $A^{\perp(H,G)}$ contains fewer that two elements, the result holds
-trivially. Let $B_1$ and $B_2$ denote two distinct elements of $A^{\perp(H,G)}$.
+If $\cB$ contains fewer that two elements, the result holds
+trivially. Let $B_1$ and $B_2$ denote two distinct elements of $\cB$. 
 We will prove $\neg (B_1 \leq B_2)$.  Indeed, if $B_1 \leq B_2$, then 
 Theorem~\ref{lemma-dedekind} implies
 \[
@@ -792,18 +788,18 @@ which is a contradiction.  The penultimate equality holds by the hypothesis that
 $A$ permutes with $B_1$. 
 \end{proof}
 
-For the present work, the most important consequence of Dedekind's rule is the
-following: 
-\begin{corollary}
-\label{cor:dedekind2}
-If $H\leq G$ and $N\subnormal G$, then $(HN)^{\perp(H,G)}$ is an
-antichain. 
-\end{corollary}
-\begin{proof}
-Note that $HN$ permutes with each
-subgroup in $\lb H, G\rb$.  Indeed, if $H \leq A \leq G$, then 
-$HNA = HAN = HN = AHN$. Therefore, by Corollary~\ref{cor:dedekind1}, the result holds. 
-\end{proof}
+% For the present work, the most important consequence of Dedekind's rule is the
+% following: 
+% \begin{corollary}
+% \label{cor:dedekind2}
+% If $H\leq G$ and $N\subnormal G$, then $(HN)^{\perp(H,G)}$ is an
+% antichain. 
+% \end{corollary}
+% \begin{proof}
+% Note that $HN$ permutes with each
+% subgroup in $\lb H, G\rb$.  Indeed, if $H \leq A \leq G$, then 
+% $HNA = HAN = HN = AHN$. Therefore, by Corollary~\ref{cor:dedekind1}, the result holds. 
+% \end{proof}
 
 
 
@@ -812,22 +808,8 @@ $HNA = HAN = HN = AHN$. Therefore, by Corollary~\ref{cor:dedekind1}, the result 
 
 \subsection{Parachute lattices}
 \label{sec:parachute-lattices}
-We now prove the equivalence of statements (B), (C), 
-and (D) mentioned in Section~\ref{sec:intro}, with one caveat.
-We let $\sG^{\mathfrak{m}}$ denote the class of groups that have a maximal core-free
-subgroup. When we mention collections of interval enforceable classes below,
-the class $\sG^{\mathfrak{m}}$ will always be excluded.  This will allow us to
-focus on properties that are not core-free interval enforceable by the
-two-element chain. Similarly, we will consider only properties that are not
-core-free interval enforceable by the one element lattices; namely,
-we don't consider the class of simple groups as one of our \ac{cfIE} classes.
-The point is that, when discussing the lattices that impose certain
-properties on groups, we avoid having to consider the one-element and
-two-element chains. Anyway, in practice, these are not the lattices one uses to
-try to reason about group properties.
-
-(That statement (E) of Section~\ref{sec:intro} is also equivalent to (B) follows
-easily from the arguments given below, so we omit the details.)
+We now prove the equivalence of statements (B) and (C) 
+of Section~\ref{sec:intro}.
 
 \begin{theorem}
 \label{thm-wjd-1}
@@ -835,22 +817,13 @@ The following statements are equivalent:
 \begin{enumerate}
 \item[(B)] Every finite lattice is isomorphic to
   an interval in the subgroup lattice of a finite group.
+
 \item[(C)]
-For every finite lattice $L$, for every finite collection $\sG_1, \dots, \sG_n$
-of \acs{cfIE} classes of groups, excluding $\sG_m$
-there exists a finite group $G \in \bigcap\limits_{i=1}^n \sG_i$ such that $L \cong
-\lb H,G \rb$ for some core-free subgroup $H\leq G$. % core-free in $G$.
-%$\core_G(H) = 1$.
-
-\item[(D)]
-For every finite collection $\sL$ of finite lattices, there exists a finite
-group $G$ such that each $L_i \in \sL$ is isomorphic to $\lb H_i, G \rb$ for some
-core-free subgroup $H_i\leq G$.
-
-\item[(E)]
-For every finite collection $\sL$ of finite lattices, for every finite collection $\sG_1, \dots, \sG_n$
-of \acs{cfIE} classes of groups,
-there exists a finite group $G \in \bigcap\limits_{i=1}^n \sG_i$ such that for
+Fix $n\geq 2$ and let $\sL = \{L_1, \dots, L_n\}$ be a collection of
+finite lattices, at least two of which have more than two elements.
+For each $i = 1, 2, \dots, n$, let $\sG_i$ denote the class that is
+core-free interval enforcable by $L_i$. Then there exists a finite group $G \in
+\bigcap\limits_{i=1}^n \sG_i$ such that for 
 each $L_i \in \sL$ we have $L_i\cong \lb H_i, G \rb$ for some subgroup
 $H_i$ that is core-free in $G$. % for some core-free $H_i\leq G$. 
 \end{enumerate}
@@ -862,15 +835,12 @@ such that $\bigcap\limits_{i=1}^n \sG_i$ is empty.
 \end{remark}
 
 \begin{proof}
-We first show that (B) and (C) are equivalent.
-Obviously (C) implies (B).  Assume (B) holds and let $L$ be any finite lattice.  Suppose 
-$\sG_1, \dots, \sG_n$ is a collection of \acs{cfIE} enforceable classes of groups.
-Then there exist finite lattices $L_1, \dots, L_n$ such that, for each $i=1,
-\dots, n$,
-\[
-L_i \cong \lb H_i, G_i \rb \; \Meet \; \core_{G_i}(H_i)=1 \; \longrightarrow \; G_i\in \sG_i.
-\]
-Construct a new lattice, denoted $\sP = \sP(L, L_1, \dots, L_n)$, as shown in
+Obviously (C) implies (B).  Assume (B) holds and assume the hypotheses of (C).
+% Thus, for each $i = 1, \dots, n$, we have 
+% \[
+% L_i \cong \lb H_i, G_i \rb \; \Meet \; \core_{G_i}(H_i)=1 \; \longrightarrow \; G_i\in \sG_i.
+% \]
+Construct a new lattice, denoted $\sP = \sP(L_1, \dots, L_n)$, as shown in
 the Hasse diagram of Figure~\ref{fig:parachute} (a), where the bottoms of
 the $L_i$ sublattices are atoms in $\sP$.
 \begin{figure}[centering]
@@ -887,9 +857,9 @@ the $L_i$ sublattices are atoms in $\sP$.
   \node (Kn) at (-5.2,-2.2) [fill,circle,inner sep=1.2pt] {};
   \node (H) at (-8,-7) [fill,circle,inner sep=1.2pt] {};
 
-\draw (-10,-1) node {$L$};
-\draw (-9,-1.5) node {$L_1$};
-\draw (-8,-1.6) node {$L_2$};
+\draw (-10,-1) node {$L_1$};
+\draw (-9,-1.5) node {$L_2$};
+\draw (-8,-1.6) node {$L_3$};
 \draw (-6.5,-1) node {$L_n$};
 \draw (-6.75,-2.8) node {$\dots$};
 
@@ -918,9 +888,9 @@ the $L_i$ sublattices are atoms in $\sP$.
   \node (Knr) at (3.8,-2.2) [fill,circle,inner sep=1.2pt] {};
   \node (Hr) at (1,-7) [fill,circle,inner sep=1.2pt] {};
 
-\draw (-1,-1) node {$L$};
-\draw (0,-1.5) node {$L_1$};
-\draw (1,-1.6) node {$L_2$};
+\draw (-1,-1) node {$L_1$};
+\draw (0,-1.5) node {$L_2$};
+\draw (1,-1.6) node {$L_3$};
 \draw (2.5,-1) node {$L_n$};
 \draw (2.25,-2.8) node {$\dots$};
 \draw (1,-8.25) node {(b)};
@@ -962,33 +932,18 @@ If we can prove for each $1\leq i\leq n$ that $\core_G(K_i)=1$, then $G\in
 \sG_i$ by hypothesis, and it will follow that $G \in \bigcap\limits_{i=1}^n
 \sG_i$, proving that (B) implies (C). 
 
-If $L \cong \2$, the two element lattice, or if $L_j\cong \2$ for all $1\leq
-j\leq n$, then the consequent of the implication in (C) holds trivially.
-%% TODO: CHECK THIS MORE CAREFULLY %%
-So we can assume without loss of
-generality that $L\ncong \2$ and that there is at least one $1\leq j\leq n$ for which
-$L_j\ncong \2$. Let $N$ be a minimal normal subgroup of $G$ and suppose $N\leq
-K_i$.  Since $H$ is core-free, $K_i = NH$.  
-Suppose $K_i \neq K$.
-Note that the groups $K$ and $K_i$ permute:
+By assumption, at least two of the lattice have more than two elements.  Let's
+assume then, without loss of generality, that $|L_1| > 2$  and $|L_2| > 2$.
+Let $N$ be a normal subgroup of $G$ and suppose $N\leq K_j$ for some $j = 1,
+\dots, n$.  Since $H$ is core-free, $K_j = NH$.  
+Suppose that $K_1 \neq K_j$. (Otherwise, work with $K_2$.)
+Note that $K_j$ permutes with all subgroups in the interval 
+$L_1 = \{X : K_1\leq X \leq G\}$:
 \[
-K K_i = K NH = NKH = NHK = K_i K.
+X K_j = X NH = NX H = NHX = K_j X.
 \]
-Therefore, by Lemma~\ref{lemma-wjd-4} (i) we see that the interval $\lb K,G \rb \cong L$
-must be isomorphic to a sublattice of the interval $\lb H,K_i\rb \cong \2$, but this
-contradicts $L\ncong \2$.
-Suppose instead that $K = K_i$. Note that $K \neq K_j$, and since $K=NH$, we
-see that $K$ and $K_j$ permute.  Therefore, by Lemma~\ref{lemma-wjd-4} (i)
-again, the lattice $L_j\ncong \2$ is isomorphic to a sublattice of $\lb H,K \rb\cong
-\2$, which is impossible.  This proves that $NH = G$ for all $N\subnormal G$, so
-each $K_i$ is core-free. 
-
-The proof that statements (B) and (D) are equivalent follows by a similar
-construction.  Roughly, if
-$\sL = \{L_1, \dots, L_n\}$, we form  the lattice $\sP = \sP(L_1, \dots, L_n)$.
-If (B) holds, then there exists a group $G$ with $\sP \cong \lb H, G \rb$ and
-$\core_G(H)=1$.  The proof that each $K_i$ is core-free, where $L_i\cong \lb K_i,G \rb$, is
-similar to the argument above.
+Therefore, by Lemma~\ref{cor:dedekind1}, 
+$L_1$ is an antichain.  But this contradicts the assumption that $|L_1|>2$.
 \end{proof}
 
 By a \emph{parachute lattice}, denoted $\sP(L_1, \dots, L_m)$,
@@ -996,9 +951,8 @@ we mean a lattice just like the one illustrated in
 Figure~\ref{fig:parachute} (a), but with the lattices $L_1, \dots, L_m$
 appearing as the upper intervals. %, and the bottom of each $L_i$ covering the bottom of $\sP(L_1, \dots, L_m)$.
 
-Next we prove that %Lemma~\ref{lemma-wjd-5} says that 
-any group that has a nontrivial parachute lattice as an upper interval
-in its subgroup lattice must have some rather special properties.  
+Next we identify some special group properties that are core-free interval
+enforceable by a parachute lattice.
 \begin{lemma}
 \label{lemma-wjd-5}
  Let $\sP = \sP(L_1, \dots, L_n)$ with $n\geq 2$ and $|L_i|>2$ for all
@@ -1036,7 +990,7 @@ Assume the contrary. Then,
 since $C_G(M) \subnormal N_G(M) =G$, it follows by
 what we just proved that $C_G(M)H = G$.
 Consider any $H< K < G$. Then $1 < M\cap K < M$ (strictly, by
-Lemma~\ref{lemma-wjd-4}). Now $M\cap K$ is normalized by $H$ and centralized
+Dedekind's rule). Now $M\cap K$ is normalized by $H$ and centralized
 (hence normalized) by $C_G(M)$.  
 %(Indeed, $C_G(M)$ centralizes every subgroup of $M$.) 
 Therefore, $M\cap K \subnormal C_G(M)H = G$, contradicting the minimality of
@@ -1068,14 +1022,21 @@ and $C_G(M) = 1$; in particular,
 $M$ is nonabelian and $\core_G(X) = 1$ for all $H\leq X < G$.
 \end{enumerate}
 
+We have seen that the parachute lattice is a natural construction for 
+inserting arbitrary finite lattices $L_i$ as upper intervals $\lb K_i, G \rb$ in
+$\Sub(G)$, in such a way that if the $H$ is core-free, and if 
+at least two of the intervals above the $K_i$ have more than two elements, 
+then each $K_i$ must also be core-free in $G$.  Thus, so that once we establish
+a number of \ac{cfIE} properties, it follow that \emph{every} finite lattice $L$
+must be isomorphic to an upper interval $L \cong \lb K, G \rb$ for some $G$
+satisfying all of these \ac{cfIE} properties, if the \ac{FLRP} is to have a
+positive answer.    
 
-We conclude this section by formalizing the remarks of the previous sentence.
-Given two group theoretical properties $\cP_1, \cP_2$, we write
-$\cP_1 \rightarrow \cP_2$ to denote that property 
-$\cP_1$ implies property $\cP_2$. In other words,
-$G$ has property $\cP_1$ only if $G$ has property $\cP_2$.
-Thus $\rightarrow$ provides a natural partial order on any given set of 
-properties, as follows:
+We conclude by formalizing the remarks of the previous sentence.
+Given two group theoretical properties $\cP_1$ and $\cP_2$, we write
+$\cP_1 \rightarrow \cP_2$ to denote that a group $G$ has property $\cP_1$ only
+if is also has property $\cP_2$. 
+Thus, we obviously have 
 \[
 \cP_1 \leq \cP_2\quad  \Longleftrightarrow \quad \cP_1 \rightarrow \cP_2 \quad
 \Longleftrightarrow \quad \sG_{\cP_1}\subseteq
@@ -1089,9 +1050,11 @@ described above.
   If $\sP = \{\cP_i \mid i\in \sI\}$ is a collection of (cf-)\IE\ properties,
   then $\Meet \sP$ is (cf-)\IE.
 \end{corollary}
-The conjunction $\Meet \sP$ corresponds to the class 
-$\bigcap_{i\in \sI} \sG_{\cP_i} = \{G \in \G \mid (\forall i \in \sI) \; 
-G \text{ has property } \cP_i \}$.
+\noindent The conjunction $\Meet \sP$ corresponds to the class 
+\[
+\bigcap_{i\in \sI} \sG_{\cP_i} = \{G \in \G \mid (\forall i \in \sI) \; 
+G \text{ has property } \cP_i \}.
+\]
  \bibliography{wjd}
 % \bibliographystyle{spmpsci}
 %\bibliographystyle{amsplain}
