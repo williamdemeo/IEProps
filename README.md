@@ -20,6 +20,5 @@ For questions, comments, or suggestions please [submit an issue][].
 
 Thanks for your interest in this work!
 
-[@williamdemeo](https://github.com/williamdemeo)
 
 [submit an issue]: https://github.com/williamdemeo/IEProps/issues
