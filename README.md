@@ -5,8 +5,8 @@ This repository contains an article
 that has been accepted for publication in the journal [Communications in Algebra](http://www.tandfonline.com/toc/lagb20/current#.UuyfYXW9jAQ).
 
 
-**Title:** Interval enforceable properties of finite groups  
-**Author:** William DeMeo (williamdemeo at gmail)  
+**Title:** *Interval enforceable properties of finite groups*  
+**Author:** William DeMeo [@williamdemeo](https://github.com/williamdemeo)  
 **Date:** January 14, 2014  
 **Institution:** Department of Mathematics, University of South Carolina; Columbia 29208; USA  
 
