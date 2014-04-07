@@ -3,10 +3,10 @@ IEProps
 
 This repository contains an article that had been provisionally accepted for
 publication pending revisions.  However, after revising and resubmitting the manuscript, I
-noticed that I had introduced some serious flaws.  I am now withdrawing the
-submission, and plan to publish the corrected version.
-
-The latest revision is in the tex directory of this repository.
+noticed that I had introduced some flaws in the presentation.  
+The results of the paper are true as stated, but I am withdrawing the
+submission, and hope to publish a much improved version instead.
+This version appears in the tex directory of this repository.
 
 **Title:** *Interval enforceable properties of finite groups*  
 **Author:** William DeMeo [@williamdemeo](https://github.com/williamdemeo)  
