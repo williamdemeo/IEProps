@@ -1,0 +1,11 @@
+  \node (G) at (0,6.25) [draw,circle,inner sep=\dotsize] {};
+  \node (K1) at (-1.75,4) [draw,circle,inner sep=\dotsize] {};
+  \node (K2) at (1.75,4) [draw,circle,inner sep=\dotsize] {};
+  \node (H) at (0,2) [draw,circle,inner sep=\dotsize] {};
+\draw[semithick] 
+   (K1) to (H) to (K2)
+   (G) to [out=197,in=85] (K1) 
+   (K1) to [out=15,in=-95] (G)
+   (G) to [out=-15,in=95] (K2) 
+   (K2) to [out=165,in=-85] (G);
+

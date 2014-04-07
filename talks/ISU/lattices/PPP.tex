@@ -1,0 +1,10 @@
+%      \node (J1) at (0,1)  [draw, circle, inner sep=\dotsize] {};
+      \node (H) at (1,0)  [draw, circle, inner sep=\dotsize] {};
+      \node (M2) at (1,2)  [draw, circle, inner sep=\dotsize] {};
+      \node (J2) at (2,1)  [draw, circle, inner sep=\dotsize] {};
+      \node (G) at (2,3)  [draw, circle, inner sep=\dotsize] {};
+      \node (M1) at (3,2)  [draw, circle, inner sep=\dotsize] {};
+      \node (K) at (-.75,1.2)  [draw, circle, inner sep=\dotsize] {};
+
+      \draw[semithick] (H) to (J2) to (M2) to (G) to (M1) to (J2);
+      \draw[semithick] (H) to (K) to (G);

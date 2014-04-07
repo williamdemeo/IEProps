@@ -1,0 +1,31 @@
+
+        \node (U0) at (0,0)  [draw, circle, inner sep=\dotsize] {};
+        \draw (U0) node [below] {$U_0 = 1$};
+        \node (UH) at (3,13)  [draw, circle, inner sep=\dotsize] {};
+        \draw (UH) node [above] {$UH = S_4$};
+        \node (V) at (-3,5)  [draw, circle, inner sep=\dotsize] {};
+        \node (W) at (1,5)  [draw, circle, inner sep=\dotsize] {};
+        \node (U) at (-2,8)  [draw, circle, inner sep=\dotsize] {};
+        \draw (U) node [left] {$U\cong D_8$};
+        \node (H) at (5,5)  [draw, circle, inner sep=\dotsize] {};
+        \draw (H) node [right] {$H \cong C_3$};
+        \node (A4) at (2,10)  [draw, circle, inner sep=\dotsize] {};
+        \draw (A4) node [right] {$A_4$};
+        \node (S3) at (6,10)  [draw, circle, inner sep=\dotsize] {};
+        \draw (S3) node [right] {$S_3$};
+        \node (a) at (-3.6,3)  [draw, circle, inner sep=\dotsize] {};
+        \node (b) at (-2,3)  [draw, circle, inner sep=\dotsize] {};
+        \node (c) at (-1,4)  [draw, circle, inner sep=\dotsize] {};
+        \node (d) at (-0,4)  [draw, circle, inner sep=\dotsize] {};
+        \node (e) at (-1.5,6)  [draw, circle, inner sep=\dotsize] {};
+        \node (f) at (0,6)  [draw, circle, inner sep=\dotsize] {};
+
+        \draw[semithick] 
+        (U0) to (a) to (V) to (b) to (U0) to (c) to (V) to (U) to (e) to (c) to
+        (f) to (d) to (U0) to (W) to (f) to (U) (UH) to (A4) to (H) to (S3)
+        to (UH);
+        \draw[semithick,dotted] 
+        (U) to (UH)   (U0) to (H);
+       %\draw (-4.5,2.2) node {$L \cong$};
+
+
