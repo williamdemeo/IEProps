@@ -951,11 +951,11 @@ that every nontrivial normal subgroup of $G$ is nonabelian.
 \begin{proof}
 (i)
 Assume $1\neq N \subnormal G$. 
-As in the proof of Theorem~\ref{thm-wjd-1}, we let $K_i$
-denote the subgroups of $G$ corresponding to the atoms of $\sP$.
-Using the same argument as in that proof, we see that every subgroup $Y$ with 
-$H \leq Y < G$ is core-free in $G$.  Therefore, 
-$NY=G$ for all $H \leq Y < G$. In particular, $NH=G$. 
+As above, we let $K_i$
+denote the subgroups of $G$ corresponding to the atoms of $\sP$, and by the
+same argument used to prove Theorem~\ref{thm-wjd-1},
+we see that every subgroup $Y$ with $H \leq Y < G$ is core-free in $G$.  
+Therefore, $NY=G$ for all $H \leq Y < G$. In particular, $NH=G$. 
 
 To prove that $C_G(N)=1$, let $1\neq M \leq N$ be a minimal normal subgroup of
 $G$ contained in $N$.  It suffices to prove $C_G(M)= 1$.
@@ -982,19 +982,6 @@ Finally, since $G$ has a unique minimal normal subgroup that is nonabelian, $G$
 is nonsolvable.
 \end{proof}
 
-It follows from the foregoing that the \acs{FLRP} has a positive answer if and
-only if for every finite lattice $L$ there is a finite group $G$ satisfying all
-of the following:
-\begin{enumerate}[(i)]
-\item $L\cong \lb H, G \rb$;
-\item $G$ is nonsolvable, nonalternating, and nonsymmetric;
-\item $G$ has a unique minimal normal subgroup $M$, which satisfies $C_G(M) = 1$;
-\item $\core_G(Y) = 1$ for all $H\leq Y < G$.
-\end{enumerate}
-In particular, the unique minimal normal subgroup $M$ is nonabelian 
-and satisfies $MY = G$ for all $H\leq Y \leq G$.
-
-We conclude with one more consequence of the parachute construction.
 Given two group theoretical properties $\cP_1$ and $\cP_2$, we write
 $\cP_1 \longrightarrow \cP_2$ to denote that a group $G$ has property $\cP_1$ only
 if is also has property $\cP_2$. 
@@ -1005,18 +992,32 @@ Thus, we clearly have
 \sG_{\cP_2},
 \]
 where, as above, $\sG_{\cP_i}$ is the class of groups 
-having property $\cP_i$.
-The following is an immediate corollary of the parachute construction.
+having property $\cP_i$. The conjunction $\cP_1 \meet \cdots \meet \cP_n$ corresponds to the class 
+\[
+\bigcap_{i=1}^n \sG_{\cP_i} = \{G \in \G \mid G \text{ has property $\cP_i$ for
+  all $1\leq i\leq n$} \},
+\]
+and the following is an immediate corollary of the parachute construction:
 \begin{corollary}
 \label{cor:isle-prop-groups-1}
-  If $\sP = \{\cP_i \mid i\in \sI\}$ is a collection of (cf-)\IE\ properties,
-  then $\Meet \sP$ is (cf-)\IE.
+  If $\cP_1, \dots, \cP_n$ are cf-\IE\ properties,
+  then so is $\cP_1 \meet \cdots \meet \cP_n$.
 \end{corollary}
-\noindent The conjunction $\Meet \sP$ corresponds to the class 
-\[
-\bigcap_{i\in \sI} \sG_{\cP_i} = \{G \in \G \mid (\forall i \in \sI) \; 
-G \text{ has property } \cP_i \}.
-\]
+
+By Theorem~\ref{thm-wjd-1}, Lemma~\ref{lemma-wjd-5}, and
+Corollary \ref{cor:isle-prop-groups-1}, we see that the \acs{FLRP} has a
+positive answer (that is, statement (B) is true) if and only if for every finite
+lattice $L$ there is a finite group $G$ satisfying all of the following:
+\begin{enumerate}[(i)]
+\item $L\cong \lb H, G \rb$;
+\item $G$ is nonsolvable, nonalternating, and nonsymmetric;
+\item $\core_G(Y) = 1$ for all $H\leq Y < G$;
+\item $G$ has a unique minimal normal subgroup $M$, which satisfies $C_G(M) =
+  1$;
+in particular, $M$ is nonabelian and satisfies $MY = G$ for all $H\leq Y \leq G$.
+
+\end{enumerate}
+
  \bibliography{wjd}
 % \bibliographystyle{spmpsci}
 %\bibliographystyle{amsplain}
