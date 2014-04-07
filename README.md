@@ -3,7 +3,7 @@ IEProps
 
 This repository contains an article that had been provisionally accepted for
 publication pending revisions.  However, after revising and resubmitting the
-manuscript, I noticed that I had introduced some flaws in the presentation.  
+manuscript, I noticed that I had introduced some flaws in the presentation.
 The results of the paper are true as stated, but I am withdrawing the
 submission, and hope to publish the much improved version that resides in the
 tex directory of this repository. 
