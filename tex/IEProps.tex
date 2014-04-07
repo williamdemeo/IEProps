@@ -325,7 +325,7 @@ such that $\bigcap\limits_{i=1}^n \sG_i$ is empty.
 }
 
 Core-free interval enforceable properties are related to
-permutation representations of groups in a manner that we now describe.
+permutation representations of groups.
 If $H$ is a core-free subgroup of $G$, then $G$ has a faithful permutation 
 representation $\phi:G\hookrightarrow \Sym(G/H)$.
 Let $\<G/H, \phi(G)\>$ denote the algebra comprised of the right cosets
@@ -381,10 +381,9 @@ sublattice of $\Sub(G)$.
 With this notation, $\Sub(G)=\lb 1,G \rb$.
 When viewing $\lb H,G \rb$ as a
 sublattice of $\Sub(G)$, we sometimes refer to it as an \defn{upper interval}. 
-Given a lattice $L$, if there is no mention of specific groups $H$ and
-$G$, then the expression $L \cong \lb H, G \rb$ means ``there exist (finite) groups $H
-\leq G$ such that $L$ is isomorphic to the interval $\{K \mid H\leq K \leq G\}$ in
-the subgroup lattice of $G$.''  
+Given a lattice $L$ and a group $G$, the expression $L \cong \lb H, G \rb$ will
+mean that there exists a subgroup $H \leq G$ such that $L$ is isomorphic to the
+interval $\{K \mid H\leq K \leq G\}$ in the subgroup lattice of $G$.
 
 By a \defn{group theoretical class}, or \defn{class of groups}, we mean a
 collection $\sG$ of groups that is closed under isomorphism:
@@ -401,27 +400,16 @@ $G_1\cong G_0$, then $G_1$ has property $\cP$.\footnote{It seems there
   that every group theoretical class contains the one element group.}   
 Thus if $\sG_{\cP}$ denotes the collection of all groups having the group
 property $\cP$, then  $\sG_{\cP}$  is a class of groups, and belonging to a
-particular class of groups is a group theoretical property.  Therefore, we need not
-distinguish between a property of groups and the class of groups that possess
-this property.
+particular class of groups is a group theoretical property.
 
 If $\sK$ is a class of algebras (e.g., a class of groups), then we say that
 $\sK$ is \emph{closed under homomorphic images} and we write $\bH(\sK) = \sK$
 provided $\phi(G)\in \sK$ whenever $G\in \sK$ and $\phi$ is a homomorphism of
-$G$. By the first isomorphism theorem for
-  groups, this is equivalent to: 
-$G/N\in \sK$ whenever $G\in \sK$ and $N\subnormal G$.  For algebras, 
-$\bH(\sK) = \sK$ holds if and only if $\bA/\theta \in \sK$ for all $\bA\in \sK$
-  and all $\theta \in \Con\bA$, where $\Con\bA$ denotes the lattice of
-  congruence relations of $\bA$. 
-Apart from possible notational differences, the foregoing terminology is
-standard.  
+$G$.
 
-We now introduce some new terminology that we find
-useful.\footnote{The author thanks Bj{\o}rn Kjos-Hanssen and David Ross for suggesting
-  improvements to the wording of these definitions.}  Let $\fL$
+Let $\fL$
 denote the class of all finite lattices, and $\G$ the class of all 
-finite groups. Let $\cP$ be a given group theoretical property and $\sG_\cP$
+finite groups. Let $\cP$ be a group theoretical property and $\sG_\cP$
 the associated class of all groups with property $\cP$.  
 We call $\cP$ (and $\sG_\cP$)
 \begin{itemize}
@@ -463,7 +451,7 @@ Suppose $\cP$ is a core-free interval enforceable property.
 If $\bH(\sG_{\cP}^c) = \sG_{\cP}^c$, then $\cP$ is an interval enforceable property.
 \end{lemma}
 \begin{proof}
-Since $\cP$ is \acs{cfIE} there is a lattice $L$ such that
+Since $\cP$ is \acs{cfIE}, there is a lattice $L$ such that
 \begin{equation}
   \label{eq:100}
 L \cong \lb H,G \rb \; \Meet \; \core_G(H)=1 \; \longrightarrow \; G\in \sG_\cP.
@@ -596,27 +584,24 @@ property and its negation can both be \acs{cfIE}.  Again, if such a property wer
 found, a lattice of the form in Figure~\ref{fig:twopanelchute} would give a
 negative answer to the \acs{FLRP}, though this requires additional justification to address
 the core-free aspect (see Section \ref{sec:parachute-lattices}).  
-We suspect the answer is no, as suggested by
-%% \begin{prob}
-%% \label{prob:isle-prop2}
-%% If $\cP$ is core-free interval enforceable by a group representable lattice,
-%% does it follow that $\neg \cP$ is not core-free interval enforceable by a group
-%% representable lattice?
-%% \end{prob}
 
-We will answer this question affirmatively for a few special cases---namely,
-when $\cP$ means ``not solvable'' or ``not almost simple.'' Indeed, 
-Lemma~\ref{lem:IE-must-have-wreaths} below implies that the class of solvable
-groups, and more generally any class of groups that omits certain wreath
+This leads to the following question:
+If $\cP$ is core-free interval enforceable by a group representable lattice,
+does it follow that $\neg \cP$ is not core-free interval enforceable by a group
+representable lattice?
+We provide an affirmative answer in some special cases, such as when $\cP$ means
+``not solvable'' or ``not almost simple.''
+Indeed, Lemma~\ref{lem:IE-must-have-wreaths} implies that the class of
+solvable groups, and more generally any class of groups that omits certain wreath
 products, cannot be core-free interval enforceable by a group representable
 lattice. 
 
 \begin{lemma}
-  \label{lem:IE-must-have-wreaths}
+\label{lem:IE-must-have-wreaths}
 Suppose $\cP$ is core-free interval enforceable by a group
-representable lattice.   
-Then, for any finite nonabelian simple group $S$, there exists a wreath product group
-of the form $W = S\wr \bar{U}$ that has property $\cP$.
+representable lattice. Then, for any finite nonabelian simple group $S$, there
+exists a wreath product group of the form $W = S\wr \bar{U}$ that has property
+$\cP$. 
 \end{lemma}
 
 \begin{proof}
@@ -740,7 +725,7 @@ The class of solvable groups is an example.
 
 
 
-\subsection{Dedekind's rule and its consequences}
+\subsection{Dedekind's rule}
 \label{sec:dedekinds-rule}
 When $A$ and $B$ are subgroups of a group $G$, by $AB$ we mean the set
 $\{ a b \mid a\in A, b\in B\}$, and we write $A \join B$ or $\<A, B\>$ to denote
@@ -773,19 +758,22 @@ pairwise incomparable elements.
 
 \begin{corollary}
 \label{cor:dedekind1}
-Suppose $A \in \lb H, G\rb$ and suppose $A$ permutes with each subgroup in
-a nonempty subset $\cB \subset A^{\perp(H,G)}$ of its complements. Then $\cB$ is an antichain.
+Let $A \in \lb H, G\rb$ and let 
+$\cB$ be a nonempty subset of the set $A^{\perp(H,G)}$ of complements of $A$ in
+$\lb H, G \rb$.  If every group in $\cB$ permutes with $A$, then $\cB$ is an
+antichain. 
 \end{corollary}
 \begin{proof}
-If $\cB$ contains fewer that two elements, the result holds
-trivially. Let $B_1$ and $B_2$ denote two distinct elements of $\cB$. 
-We will prove $\neg (B_1 \leq B_2)$.  Indeed, if $B_1 \leq B_2$, then 
+If $\cB$ is a singleton, the result holds
+trivially. So assume $B_1$ and $B_2$ are distinct groups in $\cB$. 
+We prove $B_1 \nleq B_2$.  Indeed, if $B_1 \leq B_2$, then 
 Theorem~\ref{lemma-dedekind} implies
 \[
 B_1 = B_1H = B_1(A \cap B_2) = B_1A \cap B_2 = G \cap B_2 = B_2,
 \]
-which is a contradiction.  The penultimate equality holds by the hypothesis that
-$A$ permutes with $B_1$. 
+which is a contradiction.
+%The penultimate equality holds by the hypothesis that
+%$A$ permutes with $B_1$. 
 \end{proof}
 
 % For the present work, the most important consequence of Dedekind's rule is the
@@ -825,7 +813,7 @@ For each $i = 1, 2, \dots, n$, let $\sG_i$ denote the class that is
 core-free interval enforcable by $L_i$. Then there exists a finite group $G \in
 \bigcap\limits_{i=1}^n \sG_i$ such that for 
 each $L_i \in \sL$ we have $L_i\cong \lb H_i, G \rb$ for some subgroup
-$H_i$ that is core-free in $G$. % for some core-free $H_i\leq G$. 
+$H_i$ with every $H_i \leq Y <G$ core-free in $G$.
 \end{enumerate}
 \end{theorem}
 \begin{remark}
@@ -922,36 +910,29 @@ the $L_i$ sublattices are atoms in $\sP$.
 \end{figure}
 By (B), there exist groups $H <G$ with $\sP \cong \lb H,G \rb$.  We can assume $H$
 is a core-free subgroup of $G$.  (If not, replace $G$ and $H$ with
-$G/N$ and $H/N$, where $N=\core_G(H)$, and note that 
-$\sP \cong \lb H,G \rb \cong \lb H/N,G/N \rb$.)
-Let $K, K_1, \dots, K_n$ be the subgroups of $G$ in which $H$ is maximal
-and for which
-$L \cong \lb K, G \rb$ and $L_i \cong \lb K_i, G \rb,\; 1\leq i\leq n$; see
-Figure~\ref{fig:parachute} (b). 
-If we can prove for each $1\leq i\leq n$ that $\core_G(K_i)=1$, then $G\in
-\sG_i$ by hypothesis, and it will follow that $G \in \bigcap\limits_{i=1}^n
-\sG_i$, proving that (B) implies (C). 
+$G/N$ and $H/N$, where $N=\core_G(H)$.)
+Let $K, K_1, \dots, K_n$ be the subgroups in which $H$ is maximal
+and for which $L_i \cong \lb K_i, G \rb,\; 1\leq i\leq n$. 
+(Figure~\ref{fig:parachute} (b).)
+We will prove that, for each $1\leq i\leq n$ every proper subgroup of 
+$G$ that contains $K_i$ is core-free in $G$.
+It then follows that $G\in \sG_i$ for all 
+$1\leq i \leq n$, and so $G \in \bigcap\limits_{i=1}^n \sG_i$. 
 
-By assumption, at least two of the lattice have more than two elements.  Let's
-assume then, without loss of generality, that $|L_1| > 2$  and $|L_2| > 2$.
-Let $N$ be a normal subgroup of $G$ and suppose $N\leq K_j$ for some $j = 1,
-\dots, n$.  Since $H$ is core-free, $K_j = NH$.  
-Suppose that $K_1 \neq K_j$. (Otherwise, work with $K_2$.)
-Note that $K_j$ permutes with all subgroups in the interval 
-$L_1 = \{X : K_1\leq X \leq G\}$:
-\[
-X K_j = X NH = NX H = NHX = K_j X.
-\]
-Therefore, by Lemma~\ref{cor:dedekind1}, 
-$L_1$ is an antichain.  But this contradicts the assumption that $|L_1|>2$.
+Choose $Y$ such that $K_j \leq Y < G$.  We will prove $Y$ is core-free.
+If $N = \core_G(Y)$ were nontrivial, then since $H$ is core-free,
+we would have $K_j \leq NH \leq Y$.  Now, $NH$ permutes with all $X \in
+\lb H, G\rb$, since for such $X$ we have $X NH = NX H = NHX$.  Therefore, 
+if $N$ is nontrivial, then the set $(NH)^{\perp(H,G)}$, the
+complements of $NH$ in $\lb H, G\rb$, forms an antichain by
+Corollary~\ref{cor:dedekind1}. This contradicts the assumption that at least
+two of the lattices $L_i$ have more than two elements.
 \end{proof}
 
 By a \emph{parachute lattice}, denoted $\sP(L_1, \dots, L_m)$,
 we mean a lattice just like the one illustrated in 
-Figure~\ref{fig:parachute} (a), but with the lattices $L_1, \dots, L_m$
-appearing as the upper intervals. %, and the bottom of each $L_i$ covering the bottom of $\sP(L_1, \dots, L_m)$.
-
-Next we identify some special group properties that are core-free interval
+Figure~\ref{fig:parachute}.
+We identify some special group properties that are core-free interval
 enforceable by a parachute lattice.
 \begin{lemma}
 \label{lemma-wjd-5}
@@ -969,26 +950,17 @@ that every nontrivial normal subgroup of $G$ is nonabelian.
 \end{remark}
 \begin{proof}
 (i)
-Let $1\neq N \subnormal G$.  Then $N \nleq H$, since $H$ is core-free in $G$.
-Therefore, $H < NH$.   As in Section \ref{sec:parachute-lattices}, we let $K_i$
-denote the subgroups of $G$ 
-corresponding to the atoms of $\sP$.  
-Then $H$ is covered by each $K_i$, so $K_j\leq NH$ for some $1\leq j\leq n$.  
-Suppose, by way of contradiction, that $NH < G$.  
-By assumption, $n\geq 2$ and $|L_i|>2$.  Thus for any $i\neq j$ we have
-$K_i\leq Y < Z < G$ for some subgroups $Y$ and $Z$ which satisfy
-$(NH)\cap Z = H$ and $(NH)\join Y = G$.  Also, $(NH)Y = NY$ is a group, so
-$(NH)Y=NH\join Y = G$.  But then, by Dedekind's rule, we have
-\[
-Y = HY = ((NH)\cap Z) Y = (NH)Y \cap Z = G\cap Z = Z,
-\]
-contrary to $Y<Z$.  This contradiction proves that $NH = G$.
+Assume $1\neq N \subnormal G$. 
+As in the proof of Theorem~\ref{thm-wjd-1}, we let $K_i$
+denote the subgroups of $G$ corresponding to the atoms of $\sP$.
+Using the same argument as in that proof, we see that every subgroup $Y$ with 
+$H \leq Y < G$ is core-free in $G$.  Therefore, 
+$NY=G$ for all $H \leq Y < G$. In particular, $NH=G$. 
 
-To prove that $C_G(N)=1$, let $M$ be a minimal normal subgroup of $G$
-contained in $N$.  It suffices to prove $C_G(M)= 1$.
-Assume the contrary. Then, 
-since $C_G(M) \subnormal N_G(M) =G$, it follows by
-what we just proved that $C_G(M)H = G$.
+To prove that $C_G(N)=1$, let $1\neq M \leq N$ be a minimal normal subgroup of
+$G$ contained in $N$.  It suffices to prove $C_G(M)= 1$.
+Note that $C_G(M) \subnormal N_G(M) =G$.  If $C_G(M)$ were nontrivial, then it
+would follow by (1) that $C_G(M)H = G$.
 Consider any $H< K < G$. Then $1 < M\cap K < M$ (strictly, by
 Dedekind's rule). Now $M\cap K$ is normalized by $H$ and centralized
 (hence normalized) by $C_G(M)$.  
@@ -1006,45 +978,35 @@ $[M,N]$
 lies in the intersection $M\cap N$, which is trivial by the minimality of $M$.   
 Thus, $M$ and $N$ centralize each other.  In particular,
 $N \leq C_G(M) = 1$, by (i).
-
-Finally, since $G$ has a unique
-minimal normal subgroup that is nonabelian 
-(see the remark preceding the proof),
-$G$ is nonsolvable.
+Finally, since $G$ has a unique minimal normal subgroup that is nonabelian, $G$
+is nonsolvable.
 \end{proof}
 
-To summarize what we have thus far, the lemmas above imply that (B) holds if and only if
-every finite lattice is an interval $\lb H, G \rb$, with $H$ core-free in $G$, where
+It follows from the foregoing that the \acs{FLRP} has a positive answer if and
+only if for every finite lattice $L$ there is a finite group $G$ satisfying all
+of the following:
 \begin{enumerate}[(i)]
-\item $G$ is nonsolvable, not alternating, and not symmetric;
-\item $G$ has a unique minimal normal subgroup $M$ which satisfies $MH = G$
-and $C_G(M) = 1$; in particular,
-$M$ is nonabelian and $\core_G(X) = 1$ for all $H\leq X < G$.
+\item $L\cong \lb H, G \rb$;
+\item $G$ is nonsolvable, nonalternating, and nonsymmetric;
+\item $G$ has a unique minimal normal subgroup $M$, which satisfies $C_G(M) = 1$;
+\item $\core_G(Y) = 1$ for all $H\leq Y < G$.
 \end{enumerate}
+In particular, the unique minimal normal subgroup $M$ is nonabelian 
+and satisfies $MY = G$ for all $H\leq Y \leq G$.
 
-We have seen that the parachute lattice is a natural construction for 
-inserting arbitrary finite lattices $L_i$ as upper intervals $\lb K_i, G \rb$ in
-$\Sub(G)$, in such a way that if the $H$ is core-free, and if 
-at least two of the intervals above the $K_i$ have more than two elements, 
-then each $K_i$ must also be core-free in $G$.  Thus, so that once we establish
-a number of \ac{cfIE} properties, it follow that \emph{every} finite lattice $L$
-must be isomorphic to an upper interval $L \cong \lb K, G \rb$ for some $G$
-satisfying all of these \ac{cfIE} properties, if the \ac{FLRP} is to have a
-positive answer.    
-
-We conclude by formalizing the remarks of the previous sentence.
+We conclude with one more consequence of the parachute construction.
 Given two group theoretical properties $\cP_1$ and $\cP_2$, we write
-$\cP_1 \rightarrow \cP_2$ to denote that a group $G$ has property $\cP_1$ only
+$\cP_1 \longrightarrow \cP_2$ to denote that a group $G$ has property $\cP_1$ only
 if is also has property $\cP_2$. 
-Thus, we obviously have 
+Thus, we clearly have 
 \[
-\cP_1 \leq \cP_2\quad  \Longleftrightarrow \quad \cP_1 \rightarrow \cP_2 \quad
+\quad \cP_1 \longrightarrow \cP_2 \quad
 \Longleftrightarrow \quad \sG_{\cP_1}\subseteq
 \sG_{\cP_2},
 \]
-where $\sG_{\cP_i} = \{G\in \G \mid G \text{ has property } \cP_i\}$.
-The following is an immediate corollary of the parachute construction
-described above.
+where, as above, $\sG_{\cP_i}$ is the class of groups 
+having property $\cP_i$.
+The following is an immediate corollary of the parachute construction.
 \begin{corollary}
 \label{cor:isle-prop-groups-1}
   If $\sP = \{\cP_i \mid i\in \sI\}$ is a collection of (cf-)\IE\ properties,
