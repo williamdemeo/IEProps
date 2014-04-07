@@ -5,8 +5,8 @@ This repository contains an article that had been provisionally accepted for
 publication pending revisions.  However, after revising and resubmitting the
 manuscript, I noticed that I had introduced some flaws in the presentation.
 The results of the paper are true as stated, but I am withdrawing the
-submission, and hope to publish the much improved version that resides in the
-tex directory of this repository. 
+submission, and hope to publish a much improved version (which resides in the
+tex directory of this repository). 
 
 **Title:** *Interval enforceable properties of finite groups*  
 **Author:** William DeMeo [@williamdemeo](https://github.com/williamdemeo)  
