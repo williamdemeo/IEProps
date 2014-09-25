@@ -21,22 +21,22 @@ the new and improved version.
 
 **BibTeX entry:**
 
-@article {DeMeo:2013,
-    AUTHOR = {DeMeo, William},
-     TITLE = {Expansions of finite algebras and their congruence lattices},
-   JOURNAL = {Algebra Universalis},
-  FJOURNAL = {Algebra Universalis},
-    VOLUME = {69},
-      YEAR = {2013},
-    NUMBER = {3},
-     PAGES = {257--278},
-      ISSN = {0002-5240},
-   MRCLASS = {08A30 (06B10 08A60)},
-  MRNUMBER = {3041715},
-MRREVIEWER = {E. W. Kiss},
-       DOI = {10.1007/s00012-013-0226-3},
-       URL = {http://dx.doi.org/10.1007/s00012-013-0226-3},
-}
+    @article {DeMeo:2013,
+        AUTHOR = {DeMeo, William},
+         TITLE = {Expansions of finite algebras and their congruence lattices},
+       JOURNAL = {Algebra Universalis},
+      FJOURNAL = {Algebra Universalis},
+        VOLUME = {69},
+          YEAR = {2013},
+        NUMBER = {3},
+         PAGES = {257--278},
+          ISSN = {0002-5240},
+       MRCLASS = {08A30 (06B10 08A60)},
+      MRNUMBER = {3041715},
+    MRREVIEWER = {E. W. Kiss},
+           DOI = {10.1007/s00012-013-0226-3},
+           URL = {http://dx.doi.org/10.1007/s00012-013-0226-3},
+    }
 
 For questions, comments, or suggestions please [submit an issue][].
 
